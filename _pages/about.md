@@ -24,7 +24,7 @@ I have serveral good experience by doing xxxxp
 During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.
 
 ### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
-*January 2024 – Present*  
+*January 2024 – Aug 2024*  
 As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs, resulting in a 400% increase in efficiency. Additionally, I built and maintained a comprehensive database containing over 140,000 entries, facilitating extensive research into ideological biases.
 
 ### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
