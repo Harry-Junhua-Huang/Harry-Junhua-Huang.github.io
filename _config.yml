@@ -21,10 +21,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile1.jpg"
   name             : Junhua Huang
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Student, Programmer, Human"
   location         : "Rochester, NY, USA"
   employer         : "University of rochester"
   uri              : # URL
@@ -62,7 +62,7 @@ author:
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : # Username
+  steam            : (24)Harry54480
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username for X / Twitter
