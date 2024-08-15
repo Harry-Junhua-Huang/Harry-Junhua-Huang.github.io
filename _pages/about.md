@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Hi there, I'm Junhua Huang!"
+excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -16,45 +17,52 @@ I have a strong interest in machine learning and computer vision, and I am curre
 
 I have serveral good experience by doing xxxxp
 
-Engineering Experience
-======
-Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China
+# Engineering Experience
 
+### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
+*July 2024 – September 2024*  
 During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.
 
-ASDKJFHALKSJDHFLAKSJDHFLAKSJDHFLike many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
+*January 2024 – Present*  
+As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs, resulting in a 400% increase in efficiency. Additionally, I built and maintained a comprehensive database containing over 140,000 entries, facilitating extensive research into ideological biases.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
+*May 2024 – Present*  
+In this role, I developed a new computer vision model for TAL by implementing an end-to-end solution using Mamba. Under the mentorship of Researcher Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer++ structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-6. Check status by going to the repository settings, in the "GitHub pages" section
+### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
+*June 2023 – October 2023*  
+As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Conjing Ran and Ph.D. S Liu. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+### Research Assistant, University of Rochester, Rochester, NY  
+*May 2022 – December 2022*  
+In collaboration with Dr. Zhu, Dr. Jarvis, and other team members, I contributed to the digital reconstruction of the Jamestown Settlement and Elmina Castle using low-cost, image-based 3D Virtual Reality techniques. My responsibilities included disseminating high-resolution models into low-space-cost models for use in virtual reality environments. I utilized Agisoft Metashape and Unity to create detailed 3D models, conducting screening, cleaning, and restoration of raw image data for virtual reality applications. Additionally, I used Adobe Photoshop to repair overlapping virtual camera angles, manually cleaned interfering point clouds, and corrected shadows, lighting, and surface materials.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+# Projects
 
-**Markdown generator**
+### OpenJDK 17u-dev  
+*July 2024 – August 2024*  
+For the OpenJDK 17u-dev project, I authored a comprehensive step-by-step installation guide on GitHub for deploying JDK on Linux local testing environments. I also contributed to the testing and acceptance of pull request #2756(8313674) in Ubuntu 22, which helped in improving the stability and performance of the JDK.
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+### IMDB Database Project  
+*August 2023 – December 2023*  
+Leading a team of three, I ensured the database compliance and enhanced security of an IMDB Database project. My role involved focusing on testing, compatibility assessment, and debugging to prevent injection attacks. I also implemented a login system and customized functions for CRUD operations based on user type using JavaScript, PHP, MySQL, HTML, Git, and CSS. Additionally, I redesigned the website's UI and incorporated advanced database security features.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+### Body Signals Analysis Project  
+*September 2023 – December 2023*  
+In the Body Signals Analysis Project, I preprocessed over 900,000 records by selecting relevant attributes through feature engineering and reducing dimensionality using Principal Component Analysis (PCA). I developed NLP machine learning models with 72-81% accuracy for predicting the impact of smoking and drinking on body signals. My work also included visualizing data trends using Seaborn and Matplotlib, providing a clearer understanding of behavioral patterns related to smoking and drinking.
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+### Bob’s Burgers App Project  
+*January 2023 – May 2023*  
+I solo-developed an Android app named Bob's Burgers, demonstrating proficiency in key technologies such as RecyclerView, API integration, and MVVM architecture. My focus was on effective end-to-end app development, including robust error handling for invalid API requests, ensuring a seamless user experience. Additionally, I designed a user-friendly interface with careful attention to color aesthetics and smooth animations, significantly enhancing user engagement and accessibility.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+# Skills
+
+**Technical Skills:** Java, Kotlin, Python, C, R, SQL, HTML, CSS, Linux, JavaScript, PHP, MySQL, Git  
+**Software:** Android Studio, IntelliJ IDEA, Google Suite, Microsoft Office, SolidWorks, Metashape
+
+# Interests
+
+Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver)
+
