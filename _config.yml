@@ -21,7 +21,7 @@ repository               : "/junhuahuang.github.io/"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile1.jpg"
+  avatar           : "mstile-310x310.png"
   name             : Junhua Huang
   pronouns         : # example: "she/her"  
   bio              : "Student, Programmer, Human"
