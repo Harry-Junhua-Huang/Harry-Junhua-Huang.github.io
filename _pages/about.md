@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Junhua's personal websites"
+title: "Hi there, I'm Junhua Huang!"
 author_profile: true
 redirect_from: 
   - /about/
