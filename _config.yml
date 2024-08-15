@@ -12,7 +12,7 @@ title                    : "Junhua Huang's home page"
 title_separator          : "-"
 name                     : &name "Junhua Huang "
 description              : &description "personal description"
-url                      : https://harry-junhua-huang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://harry-junhua-huang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "/junhuahuang.github.io/"
 
@@ -22,7 +22,7 @@ repository               : "/junhuahuang.github.io/"
 author:
   # Biographic information
   avatar           : "mstile-310x310.png"
-  name             : Junhua Huang
+  name             : "Junhua Huang"
   pronouns         : # example: "she/her"  
   bio              : "Student, Programmer, Human"
   location         : "Rochester, NY, USA"
