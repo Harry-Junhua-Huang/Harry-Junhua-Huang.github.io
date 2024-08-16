@@ -25,7 +25,8 @@ main:
 
   # wanna add a link to my friends
   - title: "Friends"
-    url: /friends/friends-0.md
+    url: /pages/friends-underconstruct.md
+    
     
   # - title: "Guide"
   #   url: /markdown/
