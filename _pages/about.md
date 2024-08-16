@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of combining vision and language modalities](/images/profile1.jpg){: .align-right width="300px"}
+![Illustration of combining vision and language modalities](/images/profile1.jpg){: .align-right width="300px" height = "400px"}
 I am a fourth-year student at the university of rochester, majoring in computer science.
 
 My interests are in machine learning and computer vision, and mutideciplingary areas.
