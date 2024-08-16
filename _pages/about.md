@@ -15,7 +15,6 @@ My interests are in machine learning and computer vision, and mutideciplingary a
 
 I have a strong interest in machine learning and computer vision, and I am currently looking for a full-time position in MLE and preparing for the master's degree.
 
-I have serveral good experience by doing xxxxp
 
 # Engineering Experience
 
