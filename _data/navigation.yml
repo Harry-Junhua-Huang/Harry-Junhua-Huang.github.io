@@ -6,7 +6,7 @@
 
 main:
   - title: "Publications"
-    url: /publications/
+    url: /pages/404.md
 
   # - title: "Talks"
   #   url: /talks/    
@@ -23,5 +23,5 @@ main:
   - title: "CV"
     url: /files/Resume.pdf
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
