@@ -28,7 +28,7 @@ During my time at Farsee2 Technology, I designed an innovative method to reduce 
 As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs and participate to the maintainess of a comprehensive database containing over 140,000 entries of political ideology sentenses. 
 
 
-**_I am proudly introduce the research result in our paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models", You can find out more in the Navigationbar--Publication_**
+**_I am proud to introduce our research findings in the paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models," which is now available on SSRN [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4907043)._**
 
 
 
@@ -41,7 +41,7 @@ In this role, I participate into the development a new model for TAD by implemen
 
 ### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
 *June 2023 – October 2023*  
-As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Conjing Ran and Ph.D. S Liu. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
+As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Congjing Ran and Ph.D. Shenshen Liu from Wuhan University. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
 
 ### Research Assistant, University of Rochester, Rochester, NY  
 *May 2022 – December 2022*  
@@ -75,5 +75,5 @@ I solo-developed an Android app named Bob's Burgers, demonstrating proficiency i
 
 # Interests
 
-Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness
+Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness, Snowbaording
 
