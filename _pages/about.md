@@ -9,11 +9,12 @@ redirect_from:
 ---
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-I am a fourth-year student at the university of rochester, majoring in computer science.
+[The comtent here is underdevelopment： Notes 8/17. What is shown is not representing the final version]
+I am a fourth-year student at the University of Rochester, majoring in computer science and double in Business.
 
-My interests are in machine learning and computer vision, and mutideciplingary areas.
+My interests are in machine learning and computer vision, and mutideciplingary areas. 
 
-I have a strong interest in machine learning and computer vision, and I am currently looking for a full-time position in MLE and preparing for the master's degree.
+I have a strong interest in Ai and related field and I am currently looking for a full-time position in MLE and preparing for the master's degree.
 
 
 # Engineering Experience
@@ -23,12 +24,20 @@ I have a strong interest in machine learning and computer vision, and I am curre
 During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.
 
 ### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
-*January 2024 – Aug 2024*  
-As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs, resulting in a 400% increase in efficiency. Additionally, I built and maintained a comprehensive database containing over 140,000 entries, facilitating extensive research into ideological biases.
+*January 2024 – Augest 2024*  
+As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs and participate to the maintainess of a comprehensive database containing over 140,000 entries of political ideology sentenses. 
+
+
+**_I am proudly introduce the research result in our paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models", You can find out more in the Navigationbar--Publication_**
+
+
 
 ### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
 *May 2024 – Present*  
-In this role, I developed a new computer vision model for TAL by implementing an end-to-end solution using Mamba. Under the mentorship of Researcher Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer++ structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
+In this role, I participate into the development a new model for TAD by implementing SSM Mamba. Under the mentorship of PHD Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
+
+**_I would like to express my heartfelt gratitude to Pinxing for his patience and guidance throughout this research project. He has demonstrated extraordinary patience as an educator, a rigorous yet creative approach as a researcher, and exceptional coding and debugging skills as a machine learning engineer. This project marks my first significant foray into the field of computer vision, and Pinxing, as the project's mentor and initiator, has greatly enhanced my experience during the early stages of my research journey. I also want to extend my thanks to my collaborator, Fangyu Luo, for being willing to answer even my most basic questions and for providing valuable guidance on the coding aspects of our work._**
+
 
 ### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
 *June 2023 – October 2023*  
@@ -37,6 +46,9 @@ As a Technical Assistant, I created a biomedical patent database using MySQL to 
 ### Research Assistant, University of Rochester, Rochester, NY  
 *May 2022 – December 2022*  
 In collaboration with Dr. Zhu, Dr. Jarvis, and other team members, I contributed to the digital reconstruction of the Jamestown Settlement and Elmina Castle using low-cost, image-based 3D Virtual Reality techniques. My responsibilities included disseminating high-resolution models into low-space-cost models for use in virtual reality environments. I utilized Agisoft Metashape and Unity to create detailed 3D models, conducting screening, cleaning, and restoration of raw image data for virtual reality applications. Additionally, I used Adobe Photoshop to repair overlapping virtual camera angles, manually cleaned interfering point clouds, and corrected shadows, lighting, and surface materials.
+
+**_I would like to express my deepest gratitude to the University of Rochester for awarding me the Discover Grant ($5,000), which made this incredibly memorable summer possible. I am also immensely thankful to the staff at StudioX for their invaluable support and assistance throughout this experience._**
+
 
 # Projects
 
@@ -63,5 +75,5 @@ I solo-developed an Android app named Bob's Burgers, demonstrating proficiency i
 
 # Interests
 
-Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver)
+Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness
 
