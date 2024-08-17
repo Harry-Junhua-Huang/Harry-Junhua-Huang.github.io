@@ -10,11 +10,7 @@ redirect_from:
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
 [The comtent here is underdevelopment： Notes 8/17. What is shown is not representing the final version]
-I am a fourth-year student at the University of Rochester, majoring in computer science and double in Business.
-
-My interests are in machine learning and computer vision, and mutideciplingary areas. 
-
-I have a strong interest in Ai and related field and I am currently looking for a full-time position in MLE and preparing for the master's degree.
+I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering while preparing for my master’s degree.
 
 
 # Engineering Experience
