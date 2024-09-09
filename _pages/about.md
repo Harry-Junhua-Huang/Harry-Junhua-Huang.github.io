@@ -36,7 +36,7 @@ In this role, I participate into the development a new model for TAD by implemen
 
 
 ### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
-*June 2023 – October 2023*  
+*June 2023 – May 2024*  
 As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Congjing Ran and Ph.D. Shenshen Liu from Wuhan University. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
 
 ### Research Assistant, University of Rochester, Rochester, NY  
