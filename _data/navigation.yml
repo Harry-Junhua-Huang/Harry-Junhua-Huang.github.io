@@ -21,7 +21,8 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /files/CV Junhua Huang full 9.9.pdf
+    url: /files/CV_JunhuaHuang0909.pdf
+  #rename the resume file
 
   # wanna add a link to my friends
   - title: "Friends"
