@@ -9,15 +9,18 @@ redirect_from:
 ---
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-[The comtent here is underdevelopment： Notes 8/17. What is shown is not representing the final version]
+[TODO: modifing on 10/29 What is shown is not representing the final version]
 I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering while preparing for my master’s degree.
 
 
 # Engineering Experience
+[mention ALEX and the new research]
 
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
 *July 2024 – September 2024*  
-During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.
+During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.z
+
+[add a image for the company]
 
 ### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
 *January 2024 – Present*  
@@ -49,6 +52,7 @@ In collaboration with Dr. Zhu, Dr. Jarvis, and other team members, I contributed
 # Projects
 
 ### OpenJDK 17u-dev  
+[TODO, make link, to the repo. and the documentation]
 *July 2024 – August 2024*  
 For the OpenJDK 17u-dev project, I authored a comprehensive step-by-step installation guide on GitHub for deploying JDK on Linux local testing environments. I also contributed to the testing and acceptance of pull request #2756(8313674) in Ubuntu 22, which helped in improving the stability and performance of the JDK.
 
@@ -71,5 +75,5 @@ I solo-developed an Android app named Bob's Burgers, demonstrating proficiency i
 
 # Interests
 
-Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness, Snowbaording
+Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness, Snowboarding
 
