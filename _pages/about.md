@@ -15,13 +15,13 @@ I am a fourth-year student at the University of Rochester, majoring in Computer 
 
 # Engineering Experience
 ### Student Researcher, VIStA Lab, University of Rochester, Rochester, NY
-*July 2024 – Present*
+*July 2024 – Present*  
 The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [Alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),[An jie](https://pkuanjie.com/) and [Zhenghong Zhou](https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
 
 ![farsee internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
 *July 2024 – September 2024*  
-During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.z
+During my tenure at Farsee2 Technology, under the mentorship of Dr. Hailong Pan, I participated in an industry-level digital reconstruction project utilizing Gaussian sampling techniques. My role involved designing and testing a novel method to reduce floating components in digital reconstruction models by restricting point generation based on the angle between camera directions and the object's surface normal vectors. This approach effectively minimized unwanted artifacts in the models. Additionally, I contributed to modifying the parallel depth generation process, transforming it from linear computation to methods capable of handling different distributions. This enhancement significantly improved computational efficiency across multiple machines.
 
 ### Student Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
 *January 2024 – Auguest 2024*  
