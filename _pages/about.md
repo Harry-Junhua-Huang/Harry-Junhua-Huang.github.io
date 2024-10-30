@@ -16,7 +16,7 @@ I am a fourth-year student at the University of Rochester, majoring in Computer 
 # Engineering Experience
 ### Student Researcher, VIStA Lab, University of Rochester, Rochester, NY
 *July 2024 – Present*
-The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),An jie[Jie](https://pkuanjie.com/) and Zhenghong Zhou(https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
+The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [Alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),An jie[Jie](https://pkuanjie.com/) and Zhenghong Zhou(https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
 
 [mention ALEX and the new research]
 ![farsee internship photo](/images/farsee2_internship.jpg){: .float-right width="300px" height="400px"}
