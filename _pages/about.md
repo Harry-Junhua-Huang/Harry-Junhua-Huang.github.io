@@ -33,7 +33,7 @@ As a researcher at the Goergen Institute for Data Science, I focused on the chal
 
 
 ### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
-*May 2024 – Present*  
+*May 2024 – Auguest 2024, continuing after winter break*  
 In this role, I participate into the development a new model for TAD by implementing SSM Mamba. Under the mentorship of PHD Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
 
 **_I would like to express my heartfelt gratitude to Pinxin for his patience and guidance throughout this research project. He has demonstrated extraordinary patience as an educator, a rigorous yet creative approach as a researcher, and exceptional coding and debugging skills as a machine learning engineer. This project marks my first significant foray into the field of computer vision, and Pinxing, as the project's mentor and initiator, has greatly enhanced my experience during the early stages of my research journey. I also want to extend my thanks to my collaborator, Fangyu Luo, for being willing to answer even my most basic questions and for providing valuable guidance on the coding aspects of our work._**
