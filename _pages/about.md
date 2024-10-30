@@ -9,11 +9,15 @@ redirect_from:
 ---
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-[TODO: modifing on 10/29 What is shown is not representing the final version]
+[testing on 10/30]
 I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering while preparing for my master’s degree.
 
 
 # Engineering Experience
+### Student Researcher, VIStA Lab, University of Rochester, Rochester, NY
+*July 2024 – Present*
+The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),An jie[Jie](https://pkuanjie.com/) and Zhenghong Zhou(https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
+
 [mention ALEX and the new research]
 ![farsee internship photo](/images/farsee2_internship.jpg){: .float-right width="300px" height="400px"}
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
@@ -22,7 +26,7 @@ During my time at Farsee2 Technology, I designed an innovative method to reduce 
 
 [add a image for the company]
 
-### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
+### Student Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
 *January 2024 – Auguest 2024*  
 As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs and participate to the maintainess of a comprehensive database containing over 140,000 entries of political ideology sentenses. 
 
