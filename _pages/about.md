@@ -19,7 +19,7 @@ I am a fourth-year student at the University of Rochester, majoring in Computer 
 The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [Alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),An jie[Jie](https://pkuanjie.com/) and Zhenghong Zhou(https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
 
 [mention ALEX and the new research]
-![farsee internship photo](/images/farsee2_internship.jpg){: .align-right width="300px" height="400px"}
+![farsee internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
 *July 2024 – September 2024*  
 During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.z
