@@ -15,7 +15,7 @@ I am a fourth-year student at the University of Rochester, majoring in Computer 
 
 # Engineering Experience
 [mention ALEX and the new research]
-
+![farsee internship photo](/images/farsee2_internship.jpg){: .float-right width="300px" height="400px"}
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
 *July 2024 – September 2024*  
 During my time at Farsee2 Technology, I designed an innovative method to reduce floating components in digital reconstruction models by 40%. This was achieved by utilizing ground truth depth to minimize loss, under the mentorship of Ph.D. Hailong Pan. I also developed a customized workflow for parallel computing across multiple machines, which significantly enhanced computational efficiency. Furthermore, I played a key role in contributing to the upgrade of the core algorithm for the company's digital reconstruction software, leading to more accurate and efficient model outputs.z
@@ -23,7 +23,7 @@ During my time at Farsee2 Technology, I designed an innovative method to reduce 
 [add a image for the company]
 
 ### Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
-*January 2024 – Present*  
+*January 2024 – Auguest 2024*  
 As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs and participate to the maintainess of a comprehensive database containing over 140,000 entries of political ideology sentenses. 
 
 
