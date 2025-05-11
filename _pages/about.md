@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering while preparing for my master’s degree.
+I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering for the summer and continue as master in UCLA in 2025Fall.
 
 
 # Engineering Experience
@@ -18,7 +18,7 @@ I am a fourth-year student at the University of Rochester, majoring in Computer 
 The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [Alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),[An jie](https://pkuanjie.com/) and [Zhenghong Zhou](https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
 
 ![farsee internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
-### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Wuhan, China  
+### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Hybrid/Wuhan, China  
 *July 2024 – September 2024*  
 During my tenure at Farsee2 Technology, under the mentorship of Dr. Hailong Pan, I participated in an industry-level digital reconstruction project utilizing Gaussian sampling techniques. My role involved designing and testing a novel method to reduce floating components in digital reconstruction models by restricting point generation based on the angle between camera directions and the object's surface normal vectors. This approach effectively minimized unwanted artifacts in the models. Additionally, I contributed to modifying the parallel depth generation process, transforming it from linear computation to methods capable of handling different distributions. This enhancement significantly improved computational efficiency across multiple machines.
 
@@ -32,7 +32,7 @@ As a researcher at the Goergen Institute for Data Science, I focused on the chal
 
 
 ### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
-*May 2024 – Auguest 2024, continuing after winter break*  
+*May 2024 – Auguest 2024*  
 In this role, I participate into the development a new model for TAD by implementing SSM Mamba. Under the mentorship of PHD Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
 
 **_I would like to express my heartfelt gratitude to Pinxin for his patience and guidance throughout this research project. He has demonstrated extraordinary patience as an educator, a rigorous yet creative approach as a researcher, and exceptional coding and debugging skills as a machine learning engineer. This project marks my first significant foray into the field of computer vision, and Pinxing, as the project's mentor and initiator, has greatly enhanced my experience during the early stages of my research journey. I also want to extend my thanks to my collaborator, Fangyu Luo, for being willing to answer even my most basic questions and for providing valuable guidance on the coding aspects of our work._**
