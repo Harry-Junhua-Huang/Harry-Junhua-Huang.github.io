@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="/files/MLE_junhua_huang_ V2.3.docx.pdf" class="btn btn--success">Download CV</a>
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
