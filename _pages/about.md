@@ -9,13 +9,22 @@ redirect_from:
 ---
 
 ![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-I am a fourth-year student at the University of Rochester, majoring in Computer Science with a second major in Business. My interests lie in machine learning, computer vision, and interdisciplinary areas. I am particularly passionate about AI and related fields, and I am currently seeking a full-time position in machine learning engineering for the summer and continue as master in UCLA in 2025Fall.
+My name is Junhua, or Harry. I’m currently a master’s student in Electrical and Computer Engineering at UCLA, and I previously completed a dual B.S. in Computer Science and Business at the University of Rochester. My research interstes and experience is mainly related to 3D generation and reconstucture in computer vision area and VLM.
 
 
 # Engineering Experience
-### Student Researcher, VIStA Lab, University of Rochester, Rochester, NY
-*July 2024 – Present*  
-The research group are focuses on image understanding and generation,In Professor Jiebo Luo's [here](https://www.cs.rochester.edu/u/jluo/) VIStA Lab ,mentoring by [Alex](https://scholar.google.com/citations?user=6_4ethMAAAAJ&hl=en),[An jie](https://pkuanjie.com/) and [Zhenghong Zhou](https://zhouzhenghong-gt.github.io/). Our research involves enhancing 3D consistency in zero-shot image-to-image tasks. Specifically, I deploy, modify, and test diffusion models, as well as replicate and integrate various research methods. This work aims to improve model performance in handling significant domain gaps between inputs (e.g., animal skeletons) and outputs (fully rendered animal images).
+
+### Student Researcher, Seizure Lab, ECE Department, University of California, Los Angeles
+*Los Angeles, CA | Aug 2025 - Oct 2025*  
+During my time at UCLA's Seizure Lab, I focused on scaling Vision-Language Model (VLM) inference. I successfully deployed three models and boosted throughput by 16.7× (from 0.3 to 5 rps) through the implementation of asynchronous request batching. Additionally, I optimized latency by introducing a caching layer, achieving a prefix-cache hit rate of approximately 73%. Beyond the technical infrastructure, I also built a comprehensive medical visual dataset containing 10,000 records with 8 features focused on epilepsy seizures from the UCLA medical school.
+
+### Student Researcher, Professor Chenliang Xu’s Lab, University of Rochester
+*Rochester, NY | May 2025 - Sep 2025*  
+Working in Professor Chenliang Xu's lab, I conducted research on improving VLM-guided audio remixing, drawing inspiration from traditional movie composition techniques. This research led to achieving State-of-the-Art (SOTA) results with approximately 9% fewer parameters by utilizing a simplified architecture and prompt-variant sweeps. I am the first author of the resulting paper submitted to IEEE ICASSP 2026. On the engineering side, I built an asynchronous, sharded caption-embedding pipeline that boosted throughput by 16× and increased KV-cache hits from 6% to 57% via chunking and prefix-caching. I also prototyped a gated fusion and multi-head attention module.
+
+### Student Researcher, Professor Jiebo Luo’s Lab, University of Rochester
+*Rochester, NY | Aug 2024 - Apr 2025*  
+In Professor Jiebo Luo's lab, my research focused on reconstructing animal images from skeletons using Stable Diffusion (I2I). I applied partial diffusion to retain segmentation and utilized sparse-cloud encoders to inject spatial cues, effectively bridging long domain gaps. Furthermore, I improved facial realism in generated images via Reinforcement Learning from Human Feedback (RLHF) using Direct Preference Optimization (DPO) with LoRA fine-tuning. This involved building preference pairs and fine-tuning prompts and schedules on the University of Rochester's Linux clusters.
 
 ![farsee internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
 ### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Hybrid/Wuhan, China  
@@ -30,23 +39,14 @@ As a researcher at the Goergen Institute for Data Science, I focused on the chal
 **_I am proud to introduce our research findings in the paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models," which is now available on SSRN [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4907043)._**
 
 
-
-### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester, Rochester, NY  
-*May 2024 – Auguest 2024*  
-In this role, I participate into the development a new model for TAD by implementing SSM Mamba. Under the mentorship of PHD Pinxin Liu, I deployed, tested, and improved various machine learning tasks, ensuring successful execution of related paper codes on Linux servers. My work also involved modifying the ViT model to a Transformer structure and enhancing the previous model’s backbone, making it more suitable for testing and debugging by the research team.
-
-**_I would like to express my heartfelt gratitude to Pinxin for his patience and guidance throughout this research project. He has demonstrated extraordinary patience as an educator, a rigorous yet creative approach as a researcher, and exceptional coding and debugging skills as a machine learning engineer. This project marks my first significant foray into the field of computer vision, and Pinxing, as the project's mentor and initiator, has greatly enhanced my experience during the early stages of my research journey. I also want to extend my thanks to my collaborator, Fangyu Luo, for being willing to answer even my most basic questions and for providing valuable guidance on the coding aspects of our work._**
-
-
 ### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
 *June 2023 – May 2024*  
 As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Congjing Ran and Ph.D. Shenshen Liu from Wuhan University. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
 
-### Research Assistant, University of Rochester, Rochester, NY  
+### Research Assistant, University of Rochester, Rochester, NY (Discover Grant $5,000)
 *May 2022 – December 2022*  
 In collaboration with Dr. Zhu, Dr. Jarvis, and other team members, I contributed to the digital reconstruction of the Jamestown Settlement and Elmina Castle using low-cost, image-based 3D Virtual Reality techniques. My responsibilities included disseminating high-resolution models into low-space-cost models for use in virtual reality environments. I utilized Agisoft Metashape and Unity to create detailed 3D models, conducting screening, cleaning, and restoration of raw image data for virtual reality applications. Additionally, I used Adobe Photoshop to repair overlapping virtual camera angles, manually cleaned interfering point clouds, and corrected shadows, lighting, and surface materials.
 
-**_I would like to express my deepest gratitude to the University of Rochester for awarding me the Discover Grant ($5,000), which made this incredibly memorable summer possible. I am also immensely thankful to the staff at StudioX for their invaluable support and assistance throughout this experience._**
 
 
 # Projects
@@ -76,4 +76,3 @@ I solo-developed an Android app named Bob's Burgers, demonstrating proficiency i
 # Interests
 
 Cycling, Fishing, Scuba Diving (PADI Advanced Open Water Diver), Fitness, Snowboarding
-
