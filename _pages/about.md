@@ -39,9 +39,9 @@ As a researcher at the Goergen Institute for Data Science, I focused on the chal
 **_I am proud to introduce our research findings in the paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models," which is now available on SSRN [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4907043)._**
 
 
-### Technical Assistant, Wuhan Jingying Haitao Information Technology Co., Ltd, Wuhan, China  
-*June 2023 – May 2024*  
-As a Technical Assistant, I created a biomedical patent database using MySQL to support the research of Dr. Congjing Ran and Ph.D. Shenshen Liu from Wuhan University. My contributions led to a 20% improvement in data collection efficiency through the development of an automated web crawler script in Python. Additionally, I was responsible for collecting and labeling over 18,000 entries as sample data for language model training. I also utilized Lucidchart to design detailed Entity Relationship Diagrams (ERDs) that optimized data visualization and management, encompassing over 100 keys and attributes.
+### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester
+*Rochester, NY | Apr 2024 - Aug 2024*
+Contributed to a new computer vision model for Temporal Action Localization task by modifying the model backbone into Mamba structure and adjusting the new dataloader of the model. Mentored by PhD candidate Pinxin Liu, I deployed, tested, and improved various machine learning tasks for gesture generation research, successfully running and testing related paper codes on Linux servers. I also modified the ViT (Transformer++) structure and built, cleaned, and labeled 200 sets of audio-gesture datasets.
 
 ### Research Assistant, University of Rochester, Rochester, NY (Discover Grant $5,000)
 *May 2022 – December 2022*  
