@@ -60,6 +60,12 @@ PROJECTS
 
 RESEARCH PAPER AND PREPRINTS
 ======
-*   Caliskan, Cantay and Huang, Junhua and Huang, Yiyang and Lin, Ruoxuan and Shan, Wanting, **Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models** (July 26, 2024). Available at SSRN: [https://ssrn.com/abstract=4907043](https://ssrn.com/abstract=4907043)
-*   Pinxin Liu, Luchuan Song*, Junhua Huang, Chenliang Xu, **GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling**. ICCV 2025, [https://arxiv.org/abs/2501.18898](https://arxiv.org/abs/2501.18898)
-*   Junhua Huang*, Chao Huang, Chenliang Xu, **Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models**. Submitted to ICASSP 2026 (Sep 17, 2025).
+*   **Junhua Huang\***, Zhizheng Liu\*, Honglin He, Xiang Zhang, Bolei Zhou, **ChairNav: Cross-Embodiment Pretraining and Personalization for Long-Horizon Wheelchair Navigation**. Preprint, 2026. [Project page](https://vail.cs.ucla.edu/ChairNav/) (\*equal contribution)
+*   Haoxuan Wang, Griffin Galimi, **Junhua Huang**, Selina Song, Wayne Wu, Yan Yan, Bolei Zhou, **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation**. CoRL 2026. [arXiv](https://arxiv.org/abs/2609.38989)
+*   Rui Sun, **Junhua Huang**, Luca Zancato, Md Mofijul Islam, Kai-Wei Chang, **ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents**. Findings of EMNLP 2026. [Project page](https://threesr.github.io/toolsmith/)
+*   Lina Zhang, Tonmoy Monsoor, et al. (incl. **Junhua Huang**), **Seizure-Semiology-Suite (S3): A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding**. ICML 2026 (Spotlight). [arXiv](https://arxiv.org/abs/2605.21852)
+*   Pinxin Liu, Haiyang Liu, Jiahao Luo, **Junhua Huang**, Chunhao Zou, Luchuan Song, **GestureFAR: Streaming Co-Speech Gesture Generation with Flow Autoregression**. arXiv 2026. [arXiv](https://arxiv.org/abs/2609.21576)
+*   **Junhua Huang**, Chao Huang, Chenliang Xu, **Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models**. arXiv 2026. [arXiv](https://arxiv.org/abs/2601.08871)
+*   Pinxin Liu, Luchuan Song, **Junhua Huang**, Haiyang Liu, Junfan Zhu, Chenliang Xu, **GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling**. ICCV 2025. [arXiv](https://arxiv.org/abs/2501.18898)
+*   Yolo Y. Tang, Jing Bi, Pinxin Liu, et al. (incl. **Junhua Huang**), **Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large Multimodal Models**. arXiv 2025. [arXiv](https://arxiv.org/abs/2510.05034)
+*   Cantay Caliskan, **Junhua Huang**, Yiyang Huang, Ruoxuan Lin, Wanting Shan, **Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models**. Journal of Political Institutions and Political Economy, 2025. [DOI](https://doi.org/10.1561/113.00000126) | [SSRN](https://ssrn.com/abstract=4907043)

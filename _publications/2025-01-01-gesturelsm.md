@@ -7,7 +7,6 @@ excerpt: 'Latent Shortcut based Co-Speech Gesture Generation with Spatial-Tempor
 date: 2025-01-01
 venue: 'ICCV 2025'
 paperurl: 'https://arxiv.org/abs/2501.18898'
-citation: 'Pinxin Liu, Luchuan Song, Junhua Huang, Chenliang Xu. (2025). "GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling." <i>ICCV 2025</i>.'
+citation: 'Pinxin Liu, Luchuan Song, <b>Junhua Huang</b>, Haiyang Liu, Junfan Zhu, Chenliang Xu. (2025). "GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling." <i>ICCV 2025</i>.'
 ---
-[Download paper here](https://arxiv.org/abs/2501.18898)
-
+[Paper / project page](https://arxiv.org/abs/2501.18898)
