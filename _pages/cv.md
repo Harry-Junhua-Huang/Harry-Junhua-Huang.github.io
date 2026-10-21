@@ -60,7 +60,7 @@ PROJECTS
 
 RESEARCH PAPER AND PREPRINTS
 ======
-*   **Junhua Huang\***, Zhizheng Liu\*, Honglin He, Xiang Zhang, Bolei Zhou, **ChairNav: Cross-Embodiment Pretraining and Personalization for Long-Horizon Wheelchair Navigation**. Under submission, 2026. [Project page](https://vail.cs.ucla.edu/ChairNav/) (\*equal contribution)
+*   **Junhua Huang\***, Zhizheng Liu\*, Honglin He, Xiang Zhang, Bolei Zhou, **ChairNav: Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation**. arXiv:2610.24012, 2026 (under submission). [arXiv](https://arxiv.org/abs/2610.24012) | [Project page](https://vail.cs.ucla.edu/ChairNav/) (\*equal contribution)
 *   Haoxuan Wang, Griffin Galimi, **Junhua Huang**, Selina Song, Wayne Wu, Yan Yan, Bolei Zhou, **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation**. CoRL 2026. [arXiv](https://arxiv.org/abs/2609.38989)
 *   Rui Sun, **Junhua Huang**, Luca Zancato, Md Mofijul Islam, Kai-Wei Chang, **ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents**. Findings of EMNLP 2026. [Project page](https://threesr.github.io/toolsmith/)
 *   Lina Zhang, Tonmoy Monsoor, et al. (incl. **Junhua Huang**), **Seizure-Semiology-Suite (S3): A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding**. ICML 2026 (Spotlight). [arXiv](https://arxiv.org/abs/2605.21852)
