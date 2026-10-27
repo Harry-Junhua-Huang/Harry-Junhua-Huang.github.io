@@ -8,5 +8,7 @@ date: 2026-09-01
 venue: 'Conference on Robot Learning (CoRL 2026)'
 paperurl: 'https://arxiv.org/abs/2609.38989'
 citation: 'Haoxuan Wang, Griffin Galimi, <b>Junhua Huang</b>, Selina Song, Wayne Wu, Yan Yan, Bolei Zhou. (2026). "Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation." <i>Conference on Robot Learning (CoRL 2026)</i>.'
+order: 2
+projecturl: 'https://hatchetproject.github.io/delivery_steer/'
 ---
-[Paper / project page](https://arxiv.org/abs/2609.38989)
+[arXiv](https://arxiv.org/abs/2609.38989) · [Project page](https://hatchetproject.github.io/delivery_steer/)

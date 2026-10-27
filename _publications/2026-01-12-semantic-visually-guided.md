@@ -8,5 +8,6 @@ date: 2026-01-12
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2601.08871'
 citation: '<b>Junhua Huang</b>, Chao Huang, Chenliang Xu. (2026). "Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models." <i>arXiv preprint</i>.'
+order: 6
 ---
 [Paper / project page](https://arxiv.org/abs/2601.08871)

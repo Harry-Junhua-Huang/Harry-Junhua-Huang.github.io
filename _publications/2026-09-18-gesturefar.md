@@ -8,5 +8,6 @@ date: 2026-09-18
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2609.21576'
 citation: 'Pinxin Liu, Haiyang Liu, Jiahao Luo, <b>Junhua Huang</b>, Chunhao Zou, Luchuan Song. (2026). "GestureFAR: Streaming Co-Speech Gesture Generation with Flow Autoregression." <i>arXiv preprint</i>.'
+order: 7
 ---
 [Paper / project page](https://arxiv.org/abs/2609.21576)

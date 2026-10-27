@@ -8,70 +8,94 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of combining vision and language modalities](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
-My name is Junhua, or Harry. I’m currently a master’s student in Electrical and Computer Engineering at UCLA, and I previously completed a dual B.S. in Computer Science and Business at the University of Rochester. My research interstes and experience is mainly related to 3D generation and reconstucture in computer vision area and VLM.
+![Junhua Huang](/images/profile3.jpg){: .align-right width="300px" height = "400px"}
+My name is Junhua, or Harry. I'm a master's student in Electrical and Computer Engineering at UCLA (expected 2027) and a student researcher at the [Vision and Autonomy Intelligence Lab (VAIL)](https://vail.cs.ucla.edu/) with Prof. [Bolei Zhou](https://boleizhou.github.io/). I work on robot learning and robotics systems: cross-embodiment data pipelines, imitation and human-in-the-loop learning, and building and deploying systems on real hardware, including a power wheelchair, a quadruped with a robot arm, a humanoid, and Meta Aria glasses. Before UCLA, I received a B.S. in Computer Science and a B.S. in Business from the University of Rochester (May 2025).
+
+**Highlights**
+* First author of [ChairNav](https://vail.cs.ucla.edu/ChairNav/) (under submission): 84.9% autonomous driving time across 7.8 km of outdoor navigation on a Permobil M3 power wheelchair.
+* Co-author of [Cue the Flow](https://hatchetproject.github.io/delivery_steer/) (CoRL 2026), [ToolSmith](https://threesr.github.io/toolsmith/) (Findings of EMNLP 2026), and [S3](https://arxiv.org/abs/2605.21852) (ICML 2026 Spotlight). See all papers on the [Publications](/publications/) page.
+* Résumé: [PDF](/files/Junhua_Huang_Robotics_Resume.pdf) · Full CV: [CV page](/cv/)
 
 
-# Engineering Experience
+# Research & Engineering Experience
 
-### Student Researcher, Seizure Lab, ECE Department, University of California, Los Angeles
-*Los Angeles, CA | Aug 2025 - Oct 2025*  
-During my time at UCLA's Seizure Lab, I focused on scaling Vision-Language Model (VLM) inference. I successfully deployed three models and boosted throughput by 16.7× (from 0.3 to 5 rps) through the implementation of asynchronous request batching. Additionally, I optimized latency by introducing a caching layer, achieving a prefix-cache hit rate of approximately 73%. Beyond the technical infrastructure, I also built a comprehensive medical visual dataset containing 10,000 records with 8 features focused on epilepsy seizures from the UCLA medical school.
+### Student Researcher, Vision and Autonomy Intelligence Lab (VAIL), UCLA
+*Los Angeles, CA | Jan 2026 – Present | Advisor: Prof. Bolei Zhou*
+* **[ChairNav](https://vail.cs.ucla.edu/ChairNav/) (first author):** built a data-efficient cross-embodiment training-data pipeline adapting 170 h of source teleoperation data to a Permobil M3 power wheelchair using synthetic trajectories; used imitation learning on 3.19 h of human demonstrations and human-in-the-loop post-training, achieving 84.9% autonomous driving time across 7.8 km of outdoor navigation.
+* Identified nonlinear wheelchair dynamics for physics simulation; used Isaac Sim and UrbanSim; built semi-automated RGB–LiDAR calibration, conditional auto-exposure, 3D-printed mounts, and automated robot-data reconstruction, visualization, and filtering pipelines.
+* Accelerated ChairNav model inference from 0.6 to 20 Hz through model quantization and TensorRT optimization on Jetson AGX Orin; reverse-engineered the R-net CAN bus and implemented feedforward and residual compensation. Broader engineering included GPS/IMU/odometry localization and multi-IMU / high-precision GPS data collection.
+* **[Cue the Flow](https://hatchetproject.github.io/delivery_steer/) (CoRL 2026):** deployed VLM grounding and a frozen π<sub>0.5</sub> VLA on an AgileX PiPER arm with Jetson image processing and remote inference in a synchronous control loop; integrated the arm, power, communications, and streaming on a DEEP Robotics M20 Pro, and built semi-automated demonstration collection and cleaning.
+* Built shared perception between Meta Aria Gen 1 glasses and the M20 Pro for online mapping and target navigation; combined Aria Gen 2 streaming, gaze, head pose, image depth, and hand gestures to infer target direction, distance, and user intent.
+* Also: Booster T1 humanoid data collection and Unitree Go2 navigation host software.
 
-### Student Researcher, Professor Chenliang Xu’s Lab, University of Rochester
-*Rochester, NY | May 2025 - Sep 2025*  
-Working in Professor Chenliang Xu's lab, I conducted research on improving VLM-guided audio remixing, drawing inspiration from traditional movie composition techniques. This research led to achieving State-of-the-Art (SOTA) results with approximately 9% fewer parameters by utilizing a simplified architecture and prompt-variant sweeps. I am the first author of the resulting paper submitted to IEEE ICASSP 2026. On the engineering side, I built an asynchronous, sharded caption-embedding pipeline that boosted throughput by 16× and increased KV-cache hits from 6% to 57% via chunking and prefix-caching. I also prototyped a gated fusion and multi-head attention module.
+### Student Researcher, UCLA NLP Group
+*Los Angeles, CA | Dec 2025 – Mar 2026 | Advisor: Prof. Kai-Wei Chang*
+* Co-developed [ToolSmith](https://threesr.github.io/toolsmith/) (Findings of EMNLP 2026), which synthesizes and verifies Python tools for multimodal search agents: generated 264 verified tools from a 9,174-query pool, improving Qwen3-VL-8B MMSearch accuracy from 51.46% to 55.56%.
 
-### Student Researcher, Professor Jiebo Luo’s Lab, University of Rochester
-*Rochester, NY | Aug 2024 - Apr 2025*  
-In Professor Jiebo Luo's lab, my research focused on reconstructing animal images from skeletons using Stable Diffusion (I2I). I applied partial diffusion to retain segmentation and utilized sparse-cloud encoders to inject spatial cues, effectively bridging long domain gaps. Furthermore, I improved facial realism in generated images via Reinforcement Learning from Human Feedback (RLHF) using Direct Preference Optimization (DPO) with LoRA fine-tuning. This involved building preference pairs and fine-tuning prompts and schedules on the University of Rochester's Linux clusters.
+### Student Researcher, Seizure Lab, ECE Department, UCLA
+*Los Angeles, CA | Aug 2025 – Oct 2025*
+* Built a clinical seizure-semiology video dataset (10,000 records, 8 features) with data from the UCLA medical school, contributing to [S3: Seizure-Semiology-Suite](https://arxiv.org/abs/2605.21852) (ICML 2026 Spotlight).
+* Deployed 3 vision-language models with vLLM asynchronous inference and request batching, increasing throughput from 0.3 to 5 requests/s (16.7×).
 
-![farsee internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
-### Machine Learning Engineer Intern, Farsee2 Technology Co., Ltd, Hybrid/Wuhan, China  
-*July 2024 – September 2024*  
-During my tenure at Farsee2 Technology, under the mentorship of Dr. Hailong Pan, I participated in an industry-level digital reconstruction project utilizing Gaussian sampling techniques. My role involved designing and testing a novel method to reduce floating components in digital reconstruction models by restricting point generation based on the angle between camera directions and the object's surface normal vectors. This approach effectively minimized unwanted artifacts in the models. Additionally, I contributed to modifying the parallel depth generation process, transforming it from linear computation to methods capable of handling different distributions. This enhancement significantly improved computational efficiency across multiple machines.
+### Student Researcher, Prof. Chenliang Xu's Lab, University of Rochester
+*Rochester, NY | May 2025 – Sep 2025*  
+Researched VLM-guided audio remixing (acoustic highlighting), drawing on techniques from traditional film composition. I am the first author of [Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models](https://arxiv.org/abs/2601.08871) (arXiv 2026). On the engineering side, I built an asynchronous, sharded caption-embedding pipeline with chunking and prefix caching, and prototyped gated-fusion and multi-head attention modules.
 
-### Student Researcher, Goergen Institute for Data Science, University of Rochester, Rochester, NY  
-*January 2024 – Auguest 2024*  
-As a researcher at the Goergen Institute for Data Science, I focused on the challenging issues of generative fairness and bias in large language models (LLMs), particularly within the context of political ideology. My work involved developing methods to calculate and evaluate political ideologies to conduct blind testing on LLMs. I automated the data collection process using Python and APIs and participate to the maintainess of a comprehensive database containing over 140,000 entries of political ideology sentenses. 
+### Student Researcher, Prof. Jiebo Luo's Lab, University of Rochester
+*Rochester, NY | Aug 2024 – Apr 2025*  
+Reconstructed animal images from skeletons using Stable Diffusion (image-to-image). I applied partial diffusion to retain segmentation and used sparse-cloud encoders to inject spatial cues across large domain gaps, then improved facial realism with preference optimization (DPO with LoRA fine-tuning), building preference pairs and tuning prompts and schedules on the University of Rochester's Linux clusters. I also contributed to the survey [Video-LMM Post-Training](https://arxiv.org/abs/2510.05034) (arXiv 2025).
+
+![Farsee2 internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
+### Machine Learning Intern, Farsee2 Technology, Hybrid / Wuhan, China
+*Jul 2024 – Sep 2024 | Mentor: Dr. Hailong Pan*
+* Reduced floating artifacts by approximately 40% in city-scale Gaussian Splatting reconstruction by restricting point generation with incidence-angle weighting (the angle between camera rays and surface normals) and adding depth/normal supervision.
+* Reworked depth generation from a linear process into configurable multi-machine scripts that parallelized depth generation and preprocessing for reconstruction prototypes.
+
+### Research Assistant, Prof. Chenliang Xu's Lab, University of Rochester
+*Rochester, NY | Apr 2024 – Aug 2024*  
+Mentored by PhD candidate Pinxin Liu, I deployed, tested, and extended models for co-speech gesture generation on Linux GPU servers, and built, cleaned, and labeled 200 audio–gesture sequences. I also explored a Mamba backbone and a new dataloader for temporal action localization. I also modified a ViT (Transformer++) structure. This work contributed to [GestureLSM](https://arxiv.org/abs/2501.18898) (ICCV 2025).
+
+### Student Researcher, Goergen Institute for Data Science, University of Rochester
+*Rochester, NY | Jan 2024 – Aug 2024*  
+I studied fairness and bias in large language models in the context of political ideology. I developed methods to calculate and evaluate political positions for blind testing of LLMs, automated data collection with Python and APIs, and helped maintain a database of more than 140,000 political-ideology sentences. The resulting paper, [Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models](https://doi.org/10.1561/113.00000126), is published in the *Journal of Political Institutions and Political Economy* (2025; [SSRN preprint](https://ssrn.com/abstract=4907043)).
+
+### Research Assistant, University of Rochester (Schwartz Discover Grant, $5,000)
+*Rochester, NY | May 2022 – Dec 2022*  
+With Dr. Zhu, Dr. Jarvis, and other team members, I contributed to the digital reconstruction of the Jamestown Settlement and Elmina Castle using low-cost, image-based 3D virtual reality techniques. I converted high-resolution models into lightweight models for VR, built 3D models with Agisoft Metashape and Unity, screened, cleaned, and restored raw image data, repaired overlapping virtual camera angles in Adobe Photoshop, manually cleaned interfering point clouds, and corrected shadows, lighting, and surface materials.
 
 
-**_I am proud to introduce our research findings in the paper "Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models," which is now available on SSRN [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4907043)._**
+# Teaching
 
-
-### Research Assistant, Professor Chengliang Xu’s Lab, University of Rochester
-*Rochester, NY | Apr 2024 - Aug 2024*
-Contributed to a new computer vision model for Temporal Action Localization task by modifying the model backbone into Mamba structure and adjusting the new dataloader of the model. Mentored by PhD candidate Pinxin Liu, I deployed, tested, and improved various machine learning tasks for gesture generation research, successfully running and testing related paper codes on Linux servers. I also modified the ViT (Transformer++) structure and built, cleaned, and labeled 200 sets of audio-gesture datasets.
-
-### Research Assistant, University of Rochester, Rochester, NY (Discover Grant $5,000)
-*May 2022 – December 2022*  
-In collaboration with Dr. Zhu, Dr. Jarvis, and other team members, I contributed to the digital reconstruction of the Jamestown Settlement and Elmina Castle using low-cost, image-based 3D Virtual Reality techniques. My responsibilities included disseminating high-resolution models into low-space-cost models for use in virtual reality environments. I utilized Agisoft Metashape and Unity to create detailed 3D models, conducting screening, cleaning, and restoration of raw image data for virtual reality applications. Additionally, I used Adobe Photoshop to repair overlapping virtual camera angles, manually cleaned interfering point clouds, and corrected shadows, lighting, and surface materials.
-
+* **Teaching Assistant & Workshop Leader**, University of Rochester: CSC 172 Data Structures and Algorithms (Aug 2023 – May 2024); CSC 171 Introduction to Computer Science (Dec 2022 – May 2023). Details on the [Teaching](/teaching/) page.
 
 
 # Projects
 
-### OpenJDK 17u-dev  
-[TODO, make link, to the repo. and the documentation]
+### OpenJDK 17u-dev
 *July 2024 – August 2024*  
-For the OpenJDK 17u-dev project, I authored a comprehensive step-by-step installation guide on GitHub for deploying JDK on Linux local testing environments. I also contributed to the testing and acceptance of pull request #2756(8313674) in Ubuntu 22, which helped in improving the stability and performance of the JDK.
+For the OpenJDK 17u-dev project, I authored a step-by-step installation guide on GitHub for deploying the JDK in local Linux testing environments, and contributed to the testing and acceptance of pull request #2756 (8313674) on Ubuntu 22.
 
-### IMDB Database Project  
+### IMDB Database Project
 *August 2023 – December 2023*  
-Leading a team of three, I ensured the database compliance and enhanced security of an IMDB Database project. My role involved focusing on testing, compatibility assessment, and debugging to prevent injection attacks. I also implemented a login system and customized functions for CRUD operations based on user type using JavaScript, PHP, MySQL, HTML, Git, and CSS. Additionally, I redesigned the website's UI and incorporated advanced database security features.
+Leading a team of three, I ensured database compliance and improved the security of an IMDB database project, focusing on testing, compatibility assessment, and debugging to prevent injection attacks. I implemented a login system and user-type-specific CRUD functions using JavaScript, PHP, MySQL, HTML, CSS, and Git, and redesigned the website's UI.
 
-### Body Signals Analysis Project  
+### Body Signals Analysis Project
 *September 2023 – December 2023*  
-In the Body Signals Analysis Project, I preprocessed over 900,000 records by selecting relevant attributes through feature engineering and reducing dimensionality using Principal Component Analysis (PCA). I developed NLP machine learning models with 72-81% accuracy for predicting the impact of smoking and drinking on body signals. My work also included visualizing data trends using Seaborn and Matplotlib, providing a clearer understanding of behavioral patterns related to smoking and drinking.
+I preprocessed over 900,000 records with feature engineering and reduced dimensionality with Principal Component Analysis (PCA). I trained SVM and XGBoost models with 72–81% accuracy for predicting the impact of smoking and drinking on body signals, and visualized data trends with Seaborn and Matplotlib.
 
-### Bob’s Burgers App Project  
+### Bob's Burgers App Project
 *January 2023 – May 2023*  
-I solo-developed an Android app named Bob's Burgers, demonstrating proficiency in key technologies such as RecyclerView, API integration, and MVVM architecture. My focus was on effective end-to-end app development, including robust error handling for invalid API requests, ensuring a seamless user experience. Additionally, I designed a user-friendly interface with careful attention to color aesthetics and smooth animations, significantly enhancing user engagement and accessibility.
+I solo-developed an Android app, Bob's Burgers, using RecyclerView, API integration, and the MVVM architecture, with robust error handling for invalid API requests and a user-friendly interface with smooth animations.
+
 
 # Skills
 
-**Technical Skills:** Java, Kotlin, Python, C, R, SQL, HTML, CSS, Linux, JavaScript, PHP, MySQL, Git  
-**Software:** Android Studio, IntelliJ IDEA, Google Suite, Microsoft Office, SolidWorks, Metashape
+**Robot Learning:** imitation, preference, and reinforcement learning; flow matching; VLA/VLM; cross-embodiment transfer  
+**Robotics Systems:** system identification, physics-based simulation, Isaac Sim, UrbanSim, ROS/ROS2, CAN bus, TensorRT, SLAM, RGB–LiDAR calibration, 3D reconstruction  
+**Platforms:** Permobil M3, AgileX PiPER, DEEP Robotics M20 Pro, Booster T1, Unitree Go2; Meta Aria Gen 1 and Gen 2; NVIDIA Jetson Xavier NX and Jetson AGX Orin  
+**Programming:** Python, PyTorch, Linux, Java, Kotlin, C, R, SQL, JavaScript, PHP, MySQL, HTML, CSS, Git  
+**Software:** Android Studio, IntelliJ IDEA, SolidWorks, Agisoft Metashape, Unity, Google Suite, Microsoft Office
+
 
 # Interests
 
