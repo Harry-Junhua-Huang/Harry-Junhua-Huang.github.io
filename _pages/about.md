@@ -49,14 +49,14 @@ Reconstructed animal images from skeletons using Stable Diffusion (image-to-imag
 ### Machine Learning Intern, Farsee2 Technology, Hybrid / Wuhan, China
 *Jul 2024 – Sep 2024 | Mentor: Dr. Hailong Pan*
 * Reduced floating artifacts by approximately 40% in city-scale Gaussian Splatting reconstruction by restricting point generation with incidence-angle weighting (the angle between camera rays and surface normals) and adding depth/normal supervision.
-* Reworked depth generation from a linear process into configurable multi-machine scripts that parallelized depth generation and preprocessing for reconstruction prototypes.
+* Reworked depth generation from a linear process into configurable multi-machine scripts that parallelized depth generation and preprocessing, integrated into the product pipeline.
 
 ### Research Assistant, Prof. Chenliang Xu's Lab, University of Rochester
 *Rochester, NY | Apr 2024 – Aug 2024*  
 Mentored by PhD candidate Pinxin Liu, I deployed, tested, and extended models for co-speech gesture generation on Linux GPU servers, and built, cleaned, and labeled 200 audio–gesture sequences. I also explored a Mamba backbone and a new dataloader for temporal action localization. I also modified a ViT (Transformer++) structure. This work contributed to [GestureLSM](https://arxiv.org/abs/2501.18898) (ICCV 2025).
 
 ### Student Researcher, Goergen Institute for Data Science, University of Rochester
-*Rochester, NY | Jan 2024 – Aug 2024*  
+*Rochester, NY | Jan 2024 – Jun 2024*  
 I studied fairness and bias in large language models in the context of political ideology. I developed methods to calculate and evaluate political positions for blind testing of LLMs, automated data collection with Python and APIs, and helped maintain a database of more than 140,000 political-ideology sentences. The resulting paper, [Using Generative AI to Calculate Party Positions: A Comparison of Human Experts and Large Language Models](https://doi.org/10.1561/113.00000126), is published in the *Journal of Political Institutions and Political Economy* (2025; [SSRN preprint](https://ssrn.com/abstract=4907043)).
 
 ### Research Assistant, University of Rochester (Schwartz Discover Grant, $5,000)

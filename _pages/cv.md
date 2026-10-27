@@ -13,7 +13,7 @@ redirect_from:
 
 <div style="text-align: center;">
     <strong>Junhua (Harry) Huang</strong><br>
-    1-585-286-7948 | <a href="mailto:junhuahuang1218@gmail.com">junhuahuang1218@gmail.com</a> | Los Angeles, CA | <a href="https://www.linkedin.com/in/junhuahuang1218">LinkedIn</a>
+    1-585-286-7948 | <a href="mailto:junhuahuang1218@gmail.com">junhuahuang1218@gmail.com</a> | Los Angeles, CA | <a href="https://www.linkedin.com/in/junuha-huang/">LinkedIn</a>
 </div>
 
 EDUCATION
@@ -59,16 +59,16 @@ RESEARCH & ENGINEERING EXPERIENCE
 *   **Machine Learning Intern**, Farsee2 Technology (Hybrid / Wuhan, China), mentored by Dr. Hailong Pan
     *   *Jul 2024 – Sep 2024*
     *   Reduced floating artifacts by approximately 40% in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision.
-    *   Built configurable multi-machine scripts that parallelized depth generation and preprocessing for reconstruction prototypes.
+    *   Built configurable multi-machine scripts that parallelized depth generation and preprocessing, integrated into the product pipeline.
 
 *   **Research Assistant**, Prof. Chenliang Xu's Lab, Computer Science Department, University of Rochester
     *   *Rochester, NY · Apr 2024 – Aug 2024*
     *   Deployed, tested, and extended co-speech gesture generation models on Linux GPU servers; built, cleaned, and labeled 200 audio–gesture sequences; explored a Mamba backbone for temporal action localization; modified a ViT (Transformer++) structure. Contributed to [GestureLSM](https://arxiv.org/abs/2501.18898) (ICCV 2025).
 
 *   **Student Researcher**, Goergen Institute for Data Science, University of Rochester
-    *   *Rochester, NY · Jan 2024 – Aug 2024*
+    *   *Rochester, NY · Jan 2024 – Jun 2024*
     *   Designed two ideology-bias metrics and a blind-test harness; automated data collection and reproducible scoring for evaluating political ideology in LLMs; helped maintain a database of more than 140,000 political-ideology sentences.
-    *   Found that LLMs rate manifestos about 73.64% less extreme than the ground truth; published in the *Journal of Political Institutions and Political Economy* (2025; [SSRN](https://ssrn.com/abstract=4907043)).
+    *   Published in the *Journal of Political Institutions and Political Economy* (2025; [SSRN](https://ssrn.com/abstract=4907043)).
 
 *   **Research Assistant (Schwartz Discover Grant)**, University of Rochester
     *   *Rochester, NY · May 2022 – Dec 2022*
