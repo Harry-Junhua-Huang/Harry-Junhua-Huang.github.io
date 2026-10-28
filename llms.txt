@@ -1,0 +1,61 @@
+# Junhua (Harry) Huang
+
+> Robot learning and robotics systems. M.S. in Electrical and Computer Engineering at UCLA (expected 2027); Student Researcher at the Vision and Autonomy Intelligence Lab (VAIL), UCLA, with Prof. Bolei Zhou. Los Angeles, CA.
+
+Junhua (Harry) Huang works where robot learning meets real hardware: cross-embodiment data, human-in-the-loop training, and on-robot deployment. He is first author of ChairNav, a data-efficient cross-embodiment pipeline for outdoor, map-free wheelchair navigation on a Permobil M3, and co-author of Cue the Flow (CoRL 2026), ToolSmith (Findings of EMNLP 2026) and S3 (ICML 2026 Spotlight). His experience covers the whole robot stack, from reverse-engineering a wheelchair's R-net CAN interface, nonlinear system identification, 3D-printed prototypes and sensor mounts, and semi-automated RGB-LiDAR calibration, to quantized TensorRT model inference on a Jetson AGX Orin, edge-host VLA deployment on a quadruped mobile manipulator, eye-gaze interaction with Meta Aria glasses, vLLM model serving and city-scale Gaussian Splatting. He prototypes quickly, deploys on real robots, and improves systems from real-world use, for example human-in-the-loop post-training from rider takeovers.
+
+## Links
+
+- [Homepage](https://harry-junhua-huang.github.io/): demos, robot systems, selected papers
+- [CV](https://harry-junhua-huang.github.io/cv/): full text CV
+- [Résumé (PDF, 1 page)](https://harry-junhua-huang.github.io/files/Junhua_Huang_Robotics_Resume.pdf)
+- [Publications](https://harry-junhua-huang.github.io/publications/)
+- [LinkedIn](https://www.linkedin.com/in/junuha-huang/)
+- [GitHub](https://github.com/Harry-Junhua-Huang)
+- Email: junhuahuang1218@gmail.com
+
+## Experience
+
+- **Student Researcher, Vision and Autonomy Intelligence Lab (VAIL), UCLA**, Prof. Bolei Zhou (Jan 2026 – Present)
+  - ChairNav (first author): cross-embodiment training-data pipeline that adapts 170 h of source delivery-robot teleoperation video to a Permobil M3 power wheelchair with synthetic trajectories; imitation learning on 3.19 h of human driving demonstrations plus human-in-the-loop post-training. The post-training policy drove 84.9% of driving time autonomously over 7.8 km in four outdoor drives (116.2 of 136.9 min; a share of driving time, not a task success rate).
+  - Wheelchair systems: reverse-engineered the R-net CAN interface with feedforward and residual compensation; identified nonlinear wheelchair dynamics for physics-based trajectory simulation; sped up ChairNav model inference on a Jetson AGX Orin from 0.6 to 20 Hz with model quantization and TensorRT (model inference rate, not the full control loop; the paper's deployment runs the model at 10 Hz).
+  - Broader VAIL engineering: Isaac Sim and UrbanSim; semi-automated RGB-LiDAR calibration; conditional auto-exposure; 3D-printed mounts; automated robot-data reconstruction, visualization and filtering; GPS/IMU/odometry localization; multi-IMU and high-precision GPS data collection.
+  - Cue the Flow (CoRL 2026): deployed VLM grounding and a frozen π0.5 VLA on an AgileX PiPER arm, with a Jetson handling camera processing and compression and bridging to remote inference in a synchronous control loop; integrated the arm, power, communications and streaming on a DEEP Robotics M20 Pro; built semi-automated demonstration collection and cleaning.
+  - Meta Aria Gen 1 x M20 Pro: shared perception for online mapping and target navigation.
+  - Meta Aria Gen 2: streaming, eye gaze, head pose, image depth and hand gestures to infer target direction, distance and user intent. One-day gaze-to-goal study (Sep 2026; one wearer; on-device recordings analysed offline): after a 5-point calibration, gaze error p50 1.6-2.0 degrees and floor-goal error 0.1-0.25 m at 1.5-4 m with the chair parked, checked against AprilTag ground truth. In this study, distance came from the calibrated gaze ray intersected with the floor plane (the glasses' own depth/vergence output proved unusable); not yet tested live-streamed or while moving.
+  - Also: Booster T1 humanoid data collection; Unitree Go2 navigation host software.
+- **Student Researcher, UCLA NLP Group**, Prof. Kai-Wei Chang (Dec 2025 – Mar 2026)
+  - Co-developed ToolSmith: 264 verified tools generated from a 9,174-query pool through tool synthesis and verification; Qwen3-VL-8B MMSearch accuracy 51.46% -> 55.56%.
+- **Student Researcher, Seizure Lab, ECE Department, UCLA** (Aug 2025 – Oct 2025)
+  - Built a clinical seizure-semiology dataset (10,000 records, 8 features) contributing to S3; deployed 3 VLMs with vLLM asynchronous inference, 0.3 -> 5 requests/s (16.7x).
+- **Machine Learning Intern, Farsee2 Technology** (Hybrid; Jul 2024 – Sep 2024)
+  - About 40% fewer floating artifacts in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision; multi-machine preprocessing pipelines for reconstruction prototypes.
+
+## Education
+
+- University of California, Los Angeles: M.S. in Electrical and Computer Engineering, expected 2027
+- University of Rochester: B.S. in Computer Science and B.S. in Business, May 2025; GPA 3.82/4.00; Highest Distinction, Cum Laude; Dean's List (8 semesters); Schwartz Discover Grant; TA for CSC171/172
+
+## Selected work
+
+- [ChairNav: Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation](https://arxiv.org/abs/2610.24012). J. Huang*, Z. Liu*, et al. Under submission, 2026 (*equal contribution). [Project page](https://vail.cs.ucla.edu/ChairNav/)
+- [Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation](https://arxiv.org/abs/2609.38989). H. Wang et al. (incl. J. Huang). CoRL 2026. [Project page](https://hatchetproject.github.io/delivery_steer/)
+- [ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents](https://threesr.github.io/toolsmith/). R. Sun et al. (incl. J. Huang). Findings of EMNLP 2026.
+- [Seizure-Semiology-Suite (S3): A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding](https://arxiv.org/abs/2605.21852). L. Zhang et al. (incl. J. Huang). ICML 2026, Spotlight.
+- [GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling](https://arxiv.org/abs/2501.18898). P. Liu et al. (incl. J. Huang). ICCV 2025.
+- [Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models](https://arxiv.org/abs/2601.08871). J. Huang, C. Huang, C. Xu. arXiv 2026.
+- [GestureFAR: Streaming Co-Speech Gesture Generation with Flow Autoregression](https://arxiv.org/abs/2609.21576). P. Liu et al. (incl. J. Huang). arXiv 2026.
+
+## Skills & platforms
+
+- Robot learning: imitation learning, preference learning, reinforcement learning, flow matching, VLA, VLM, cross-embodiment transfer, human-in-the-loop learning
+- Robotics systems: system identification, physics-based simulation, Isaac Sim, UrbanSim, ROS, ROS 2, CAN bus (R-net), feedforward and residual compensation, TensorRT, model quantization, edge deployment, SLAM, RGB-LiDAR calibration, GPS/IMU/odometry localization, 3D printing, 3D reconstruction, Gaussian Splatting
+- ML systems: vLLM serving, asynchronous inference, multi-machine data pipelines, multimodal agents
+- Programming: Python, PyTorch, Linux
+- Robots: Permobil M3, AgileX PiPER, DEEP Robotics M20 Pro, Booster T1, Unitree Go2
+- Wearables: Meta Aria Gen 1, Meta Aria Gen 2
+- Edge computing: NVIDIA Jetson Xavier NX, NVIDIA Jetson AGX Orin
+
+## Contact
+
+Recruiters and sourcing agents are welcome to reach out at junhuahuang1218@gmail.com.

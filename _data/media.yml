@@ -1,0 +1,101 @@
+# Media used by the v2 home page (_pages/home.html via _includes/v2/media.html).
+# Every clip is H.264, muted, faces blurred (deface), encoded 2026-10-27.
+# badges: execution-mode labels shown under the clip. speed: playback rate vs. real time
+# (left out when the source does not state it). credit: key into `credits` below.
+# burned: the clip already shows its labels in the frame, so they are not repeated under it
+#   ("mode" = mode labels are in the frame, speed is not; "all" = mode and speed both are).
+# file_narrow / poster_narrow: stacked cut served at <= 760 px wide (picked in assets/js/v2.js).
+# pos: object-position when a tile crops the clip to 16:9.
+
+credits:
+  chairnav:
+    label: "ChairNav"
+    url: "https://vail.cs.ucla.edu/ChairNav/"
+  cue:
+    label: "Cue the Flow"
+    url: "https://hatchetproject.github.io/delivery_steer/"
+  aria:
+    label: "Own recording"
+    url: ""
+
+clips:
+  chairnav-nav-2x:
+    file: /assets/media/chairnav-nav-2x.mp4
+    poster: /assets/media/chairnav-nav-2x.webp
+    w: 960
+    h: 540
+    alt: "ChairNav policy driving the wheelchair autonomously on a city sidewalk, shown at 2x speed"
+    badges: ["Autonomous"]
+    speed: "2×"
+    burned: "all"
+    credit: chairnav
+
+  chairnav-hardware:
+    file: /assets/media/chairnav-hardware.mp4
+    poster: /assets/media/chairnav-hardware.webp
+    w: 960
+    h: 540
+    alt: "Permobil M3 platform: Jetson AGX Orin, USB–CAN interface, ZED 2i camera"
+    credit: chairnav
+
+  chairnav-mid-vs-post:
+    file: /assets/media/chairnav-mid-vs-post.mp4
+    poster: /assets/media/chairnav-mid-vs-post.webp
+    file_narrow: /assets/media/chairnav-mid-vs-post-v.mp4
+    poster_narrow: /assets/media/chairnav-mid-vs-post-v.webp
+    w: 1280
+    h: 360
+    alt: "Same gatepost: the MID policy needs a rider correction; the POST policy passes autonomously"
+    badges: ["MID: rider correction", "POST: autonomous"]
+    speed: "1×"
+    burned: "mode"
+    credit: chairnav
+
+  cue-mobile-base-demo:
+    file: /assets/media/cue-mobile-base-demo.mp4
+    poster: /assets/media/cue-mobile-base-demo.webp
+    w: 960
+    h: 540
+    alt: "Cue the Flow: cue-conditioned manipulation on the mobile base"
+    credit: cue
+
+  cue-outdoor-delivery-2:
+    file: /assets/media/cue-outdoor-delivery-2.mp4
+    poster: /assets/media/cue-outdoor-delivery-2.webp
+    w: 960
+    h: 540
+    alt: "Cue the Flow outdoor delivery: autonomous grasp at 1x, then manual navigation at 2x"
+    badges: ["Auto grasp · 1×", "Manual nav · 2×"]
+    burned: "all"
+    credit: cue
+
+  cue-outdoor-delivery-1:
+    file: /assets/media/cue-outdoor-delivery-1.mp4
+    poster: /assets/media/cue-outdoor-delivery-1.webp
+    w: 960
+    h: 540
+    alt: "Cue the Flow delivery run: autonomous grasp at 1x, then manual navigation at 2x"
+    badges: ["Auto grasp · 1×", "Manual nav · 2×"]
+    burned: "all"
+    credit: cue
+
+  aria-gaze-target:
+    file: /assets/media/aria-gaze-target.mp4
+    poster: /assets/media/aria-gaze-target.webp
+    w: 960
+    h: 412
+    alt: "Aria Gen 2: gaze dwell selects a floor AprilTag from the wheelchair; left the glasses' view, right a top-down map"
+    badges: ["Offline analysis"]
+    speed: "1×"
+    credit: aria
+
+  aria-wall-targets:
+    file: /assets/media/aria-wall-targets.mp4
+    poster: /assets/media/aria-wall-targets.webp
+    w: 1120
+    h: 480
+    pos: "0% 50%"
+    alt: "Aria Gen 2: gaze on wall AprilTags 3 to 8 m away; left the glasses' view, right a top-down map"
+    badges: ["Offline analysis"]
+    speed: "1×"
+    credit: aria

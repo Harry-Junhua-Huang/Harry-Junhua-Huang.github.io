@@ -1,10 +1,12 @@
 ---
-permalink: /
+layout: v2-page
+permalink: /about/
 title: "Hi there, I'm Junhua Huang!"
+doc_title: "About · Junhua (Harry) Huang"
+description: "Long-form bio of Junhua (Harry) Huang: robot learning and robotics systems at UCLA VAIL; research and engineering experience, teaching, projects and skills."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
-  - /about/
   - /about.html
 ---
 
@@ -34,7 +36,7 @@ My name is Junhua, or Harry. I'm a master's student in Electrical and Computer E
 
 ### Student Researcher, Seizure Lab, ECE Department, UCLA
 *Los Angeles, CA | Aug 2025 – Oct 2025*
-* Built a clinical seizure-semiology video dataset (10,000 records, 8 features) with data from the UCLA medical school, contributing to [S3: Seizure-Semiology-Suite](https://arxiv.org/abs/2605.21852) (ICML 2026 Spotlight).
+* Built a clinical seizure-semiology video dataset (10,000 records, 8 features) contributing to [S3: Seizure-Semiology-Suite](https://arxiv.org/abs/2605.21852) (ICML 2026 Spotlight).
 * Deployed 3 vision-language models with vLLM asynchronous inference and request batching, increasing throughput from 0.3 to 5 requests/s (16.7×).
 
 ### Student Researcher, Prof. Chenliang Xu's Lab, University of Rochester
@@ -45,8 +47,7 @@ Researched VLM-guided audio remixing (acoustic highlighting), drawing on techniq
 *Rochester, NY | Aug 2024 – Apr 2025*  
 Reconstructed animal images from skeletons using Stable Diffusion (image-to-image). I applied partial diffusion to retain segmentation and used sparse-cloud encoders to inject spatial cues across large domain gaps, then improved facial realism with preference optimization (DPO with LoRA fine-tuning), building preference pairs and tuning prompts and schedules on the University of Rochester's Linux clusters. I also contributed to the survey [Video-LMM Post-Training](https://arxiv.org/abs/2510.05034) (arXiv 2025).
 
-![Farsee2 internship photo](/images/farsee_internship.jpg){: .align-right width="300px" height="400px"}
-### Machine Learning Intern, Farsee2 Technology, Hybrid / Wuhan, China
+### Machine Learning Intern, Farsee2 Technology, Hybrid
 *Jul 2024 – Sep 2024 | Mentor: Dr. Hailong Pan*
 * Reduced floating artifacts by approximately 40% in city-scale Gaussian Splatting reconstruction by restricting point generation with incidence-angle weighting (the angle between camera rays and surface normals) and adding depth/normal supervision.
 * Reworked depth generation from a linear process into configurable multi-machine scripts that parallelized depth generation and preprocessing, integrated into the product pipeline.

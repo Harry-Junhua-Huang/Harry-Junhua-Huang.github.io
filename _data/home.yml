@@ -1,0 +1,139 @@
+# Content for the v2 home page (_pages/home.html).
+# Numbers and wording follow EXPERIENCE_MASTER.md / EVIDENCE_AND_METRICS.md (kit 2026-10-26)
+# and, for Aria Gen 2, docs/gaze_to_goal_findings.md (2026-09-25). Keep each line short.
+
+links:
+  resume: /files/Junhua_Huang_Robotics_Resume.pdf
+  email: junhuahuang1218@gmail.com
+  linkedin: https://www.linkedin.com/in/junuha-huang/
+  github: https://github.com/Harry-Junhua-Huang
+
+# Visitor map in the home footer. To turn it on: paste the provider's <script> snippet into
+# _includes/v2/visitor-map-snippet.html and set enabled: true.
+visitor_map:
+  enabled: false
+  provider: "MapMyVisitors"
+
+hero:
+  eyebrow: "Robot learning · Robotics systems"
+  thesis: "I work where robot learning meets real hardware: cross-embodiment data, human-in-the-loop training, and on-robot deployment."
+  sub: "M.S. ECE @ UCLA · Student Researcher at VAIL with Prof. Bolei Zhou"
+  avatar: /assets/media/avatar.webp
+  clip: chairnav-nav-2x
+
+# num + optional unit (rendered smaller, in sans). def = the tap/hover definition (optional).
+stats:
+  - num: "84.9%"
+    label: "autonomous driving time · 7.8 km outdoor"
+    def: "ChairNav post-training policy: share of driving time across 4 outdoor drives (116.2 of 136.9 min). Not a task success rate."
+  - num: "0.6 → 20"
+    unit: "Hz"
+    label: "model inference on Jetson AGX Orin"
+    def: "ChairNav model, after quantization and TensorRT. Model inference rate, not the full control loop (the paper's deployment runs the model at 10 Hz)."
+  - num: "9"
+    unit: "platforms"
+    label: "5 robots · 2 Aria glasses · 2 Jetsons"
+
+# One line under the stats (replaces the old Platforms section).
+platforms: "Permobil M3 · AgileX PiPER · DEEP Robotics M20 Pro · Booster T1 · Unitree Go2 · Meta Aria Gen 1 & 2 · Jetson AGX Orin · Jetson Xavier NX"
+
+reel:
+  feature:
+    clip: chairnav-mid-vs-post
+    title: "Same gatepost, two policies"
+    note: "Matched by route position, not time. Mid-training, the rider has to correct; after human-in-the-loop post-training, the chair passes on its own."
+  tiles:
+    - clip: chairnav-hardware
+      title: "The ChairNav wheelchair"
+    - clip: cue-mobile-base-demo
+      title: "Cue-conditioned manipulation"
+    - clip: aria-wall-targets
+      title: "Gaze on targets 3–8 m away"
+
+systems:
+  - id: wheelchair
+    kicker: "ChairNav · VAIL, UCLA"
+    title: "Wheelchair autonomy stack"
+    line: "Reverse-engineered the R-net CAN interface, identified the chair's dynamics, and sped up ChairNav model inference on the Jetson from 0.6 to 20 Hz."
+    links:
+      - { label: "Project page", url: "https://vail.cs.ucla.edu/ChairNav/" }
+      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
+    widget: true
+  - id: quadruped
+    kicker: "Cue the Flow · CoRL 2026"
+    title: "Quadruped mobile manipulation"
+    line: "A PiPER arm on a DEEP Robotics M20 Pro: I integrated the arm, power, comms and streaming, deployed a frozen π0.5 VLA through a Jetson bridge to remote inference, and built semi-automated demo collection."
+    links:
+      - { label: "Project page", url: "https://hatchetproject.github.io/delivery_steer/" }
+      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
+    clip: cue-outdoor-delivery-2
+  - id: gaze
+    kicker: "Meta Aria Gen 2 · VAIL, UCLA"
+    title: "Gaze → wheelchair goal"
+    line: "Can a glance at the floor give a wheelchair its goal? Aria Gen 2 eye gaze + VIO, checked against AprilTag ground truth."
+    figures:
+      - { num: "0.1–0.25 m", label: "floor-goal error at 1.5–4 m" }
+      - { num: "1.6–2.0°", label: "gaze error p50 (was 2.7–3.0°)" }
+      - { num: "1 / 5.4 min", label: "false confirms, natural use (naive pinch: ~100)" }
+    caveat: "5-pt calibration · 1 wearer, 1 day, chair parked · range = gaze ray ∩ floor (≤ 5 m), not the glasses' depth · analysed offline"
+    clip: aria-gaze-target
+    wide: true
+
+papers:
+  - short: "ChairNav"
+    title: "Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation"
+    venue: "Under submission · 2026"
+    role: "First author*"
+    thumb: chairnav-nav-2x
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
+      - { label: "Project", url: "https://vail.cs.ucla.edu/ChairNav/" }
+  - short: "Cue the Flow"
+    title: "Steering Flow-Matching Policies for Open-World Delivery Manipulation"
+    venue: "CoRL 2026"
+    role: "Co-author"
+    clip: cue-outdoor-delivery-1
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
+      - { label: "Project", url: "https://hatchetproject.github.io/delivery_steer/" }
+  - short: "ToolSmith"
+    title: "An Automatic Tool-Generation Framework for Multimodal Search Agents"
+    venue: "Findings of EMNLP 2026"
+    role: "Co-author"
+    compact: true
+    links:
+      - { label: "Project", url: "https://threesr.github.io/toolsmith/" }
+  - short: "S3"
+    title: "Seizure-Semiology-Suite: A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding"
+    venue: "ICML 2026"
+    award: "Spotlight"
+    role: "Co-author"
+    compact: true
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2605.21852" }
+
+experience:
+  - when: "Jan 2026 – Present"
+    org: "VAIL, UCLA"
+    role: "Student Researcher · Prof. Bolei Zhou"
+    line: "ChairNav (first author), Cue the Flow, Aria Gen 1 & Gen 2"
+  - when: "Dec 2025 – Mar 2026"
+    org: "UCLA NLP Group"
+    role: "Student Researcher · Prof. Kai-Wei Chang"
+    line: "Co-developed ToolSmith: 264 verified tools; Qwen3-VL-8B MMSearch 51.46% → 55.56%"
+  - when: "Aug – Oct 2025"
+    org: "Seizure Lab, UCLA"
+    role: "Student Researcher"
+    line: "Clinical dataset for S3; vLLM serving 0.3 → 5 requests/s"
+  - when: "Jul – Sep 2024"
+    org: "Farsee2 Technology"
+    role: "Machine Learning Intern"
+    line: "City-scale Gaussian Splatting: ~40% fewer floating artifacts"
+
+education:
+  - when: "Expected 2027"
+    org: "UCLA"
+    role: "M.S. Electrical and Computer Engineering"
+  - when: "May 2025"
+    org: "University of Rochester"
+    role: "B.S. Computer Science & B.S. Business · GPA 3.82"

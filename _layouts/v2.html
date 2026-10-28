@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include v2/head.html %}
+</head>
+<body class="v2{% if page.body_class %} {{ page.body_class }}{% endif %}">
+<a class="skip" href="#main">Skip to content</a>
+{% include v2/header.html %}
+<main id="main">
+{{ content }}
+</main>
+{% include v2/footer.html %}
+<script src="{{ '/assets/js/v2.js' | relative_url }}" defer></script>
+</body>
+</html>

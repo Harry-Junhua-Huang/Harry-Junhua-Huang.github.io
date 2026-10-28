@@ -1,0 +1,27 @@
+{%- assign L = site.data.home.links -%}
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2 class="footer__title">Let's build robots<br><em>that leave the lab.</em></h2>
+    <p class="footer__mail"><a href="mailto:{{ L.email }}">{{ L.email }}</a></p>
+    <div class="btn-row footer__cta">
+      <a class="btn btn--primary" href="{{ L.resume | relative_url }}">{% include v2/icon.html name="file" %}Résumé (PDF)</a>
+      <a class="btn" href="{{ L.linkedin }}" target="_blank" rel="noopener">{% include v2/icon.html name="linkedin" %}LinkedIn</a>
+      <a class="btn" href="{{ L.github }}" target="_blank" rel="noopener">{% include v2/icon.html name="github" %}GitHub</a>
+    </div>
+    {%- assign VM = site.data.home.visitor_map -%}
+    {%- if page.body_class == "home" and VM.enabled %}
+    <div class="footer__visitors">
+      <p class="eyebrow">Visitors</p>
+      <div class="footer__visitors-map">{% include v2/visitor-map-snippet.html %}</div>
+      <p class="footer__visitors-note">Map by {{ VM.provider }} · approximate locations, aggregated</p>
+    </div>
+    {%- endif %}
+    <div class="footer__base">
+      {%- if page.body_class == "home" %}
+      <p class="footer__credits">ChairNav clips via the <a href="https://vail.cs.ucla.edu/ChairNav/" target="_blank" rel="noopener">ChairNav project page</a> (Huang, Liu et al.): trimmed, re-encoded, faces and a house number blurred, MID/POST labels added. Cue the Flow clips © Wang et al., from the <a href="https://hatchetproject.github.io/delivery_steer/" target="_blank" rel="noopener">project page</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>: trimmed, re-encoded, faces blurred, one padded with a blurred background; these adapted clips are shared under CC BY-SA 4.0. Aria clips are my own recordings.</p>
+      {%- endif %}
+      <p class="footer__links"><span>© {{ site.time | date: '%Y' }} Junhua Huang</span><a href="{{ '/cv/' | relative_url }}">CV</a><a href="{{ '/publications/' | relative_url }}">Publications</a><a href="{{ '/teaching/' | relative_url }}">Teaching</a><a href="{{ '/about/' | relative_url }}">Long-form bio</a></p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+---
+layout: v2
+---
+{%- comment -%}
+  Text pages (About, CV, Publications, Teaching) in the v2 look: one readable column.
+  _layouts/archive.html and _layouts/single.html wrap the same way, so the old
+  Minimal Mistakes pages (which hard-code `layout: archive`) pick up this design too.
+{%- endcomment -%}
+<article class="wrap prose">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
+</article>

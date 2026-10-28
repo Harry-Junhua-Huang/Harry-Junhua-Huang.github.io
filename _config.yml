@@ -28,7 +28,7 @@ author:
   location         : "Los Angeles, CA, USA"
   employer         : "UCLA"
   uri              : # URL
-  email            : "junhuahuang@g.ucla.edu" 
+  email            : "junhuahuang1218@gmail.com"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -183,6 +183,35 @@ exclude:
   - README
   - tmp
   - vendor
+  # template placeholders and tooling that should not be published (or listed in sitemap.xml)
+  - _posts
+  - _portfolio
+  - _talks
+  - _drafts
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - CONTRIBUTING.md
+  - README.md
+  - _pages/friends-underconstruct.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/archive-layout-with-content.md
+  - _pages/terms.md
+  - _pages/talks.html
+  - _pages/talkmap.html
+  - _pages/portfolio.html
+  - _pages/year-archive.html
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
+  - _pages/collection-archive.html
+  - _pages/page-archive.html
+  - _pages/sitemap.md
+  - files/paper*.pdf
+  - files/slides*.pdf
+  # group photo with identifiable colleagues (no longer used on /about/)
+  - images/farsee_internship.jpg
 keep_files:
   - .git
   - .svn

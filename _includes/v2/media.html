@@ -1,0 +1,52 @@
+{%- comment -%}
+  Lazy, in-view looping clip from _data/media.yml.
+  Usage: {% include v2/media.html id="chairnav-nav-2x" %}
+  Optional: class="media--x", title="...", note="...",
+            still=true (a lazy <img> of the poster instead of a video),
+            credit_only=true (no mode/speed badges, e.g. when the card text already says it).
+  No autoplay attribute and preload="none": assets/js/v2.js moves data-src to src only when the
+  clip nears the viewport (after page load), plays it while visible and pauses it off-screen.
+  Only the hero clip gets a poster attribute; the others carry data-poster, which v2.js sets
+  when they come within ~800 px, so off-screen posters are not fetched with the first screen.
+  A clip with file_narrow gets a second <source data-media="..."> that v2.js picks on narrow screens.
+{%- endcomment -%}
+{%- assign m = site.data.media.clips[include.id] -%}
+{%- assign cr = site.data.media.credits[m.credit] -%}
+{%- assign eager = false -%}
+{%- if include.class contains 'media--hero' -%}{%- assign eager = true -%}{%- endif -%}
+<figure class="media{% if include.class %} {{ include.class }}{% endif %}{% if m.file_narrow and include.still == nil %} media--has-narrow{% endif %}">
+  <div class="media__frame" style="--ar: {{ m.w }} / {{ m.h }}">
+    {%- if include.still %}
+    <img class="media__video" src="{{ m.poster | relative_url }}" width="{{ m.w }}" height="{{ m.h }}" loading="lazy" decoding="async" alt="{{ m.alt | escape }}"{% if m.pos %} style="object-position: {{ m.pos }}"{% endif %}>
+    {%- else %}
+    <video class="media__video js-loop" muted loop playsinline disablepictureinpicture preload="none" width="{{ m.w }}" height="{{ m.h }}" {% if eager %}poster="{{ m.poster | relative_url }}"{% else %}data-poster="{{ m.poster | relative_url }}"{% if m.poster_narrow %} data-poster-narrow="{{ m.poster_narrow | relative_url }}"{% endif %}{% endif %} aria-label="{{ m.alt | escape }}"{% if m.pos %} style="object-position: {{ m.pos }}"{% endif %}>
+      {%- if m.file_narrow %}
+      <source data-src="{{ m.file_narrow | relative_url }}" data-media="(max-width: 760px)" type="video/mp4">
+      {%- endif %}
+      <source data-src="{{ m.file | relative_url }}" type="video/mp4">
+    </video>
+    <button class="media__toggle" type="button" aria-label="Play video" hidden><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.2v9.6L12.8 8z"/></svg><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 3h2.6v10H4.5zM8.9 3h2.6v10H8.9z"/></svg></button>
+    {%- endif %}
+  </div>
+  <figcaption class="media__cap">
+    {%- if include.title %}
+    <div class="media__text">
+      <h3 class="media__title">{{ include.title }}</h3>
+      {%- if include.note %}<p class="media__note">{{ include.note }}</p>{% endif %}
+    </div>
+    {%- endif %}
+    <div class="media__meta">
+      {%- unless include.credit_only %}
+      {%- capture bdg %}{% unless m.burned %}{% for b in m.badges %}<span class="badge">{{ b }}</span>{% endfor %}{% endunless %}{% if m.speed and m.burned != "all" %}<span class="badge{% if m.speed != '1×' %} badge--speed{% endif %}">{{ m.speed }}</span>{% endif %}{% endcapture %}
+      {%- if bdg != "" %}
+      <span class="badges">{{ bdg }}</span>
+      {%- endif %}
+      {%- endunless %}
+      {%- if cr.url and cr.url != "" %}
+      <a class="credit" href="{{ cr.url }}" target="_blank" rel="noopener">via {{ cr.label }}&nbsp;<span aria-hidden="true">↗</span></a>
+      {%- else %}
+      <span class="credit credit--own">{{ cr.label }}</span>
+      {%- endif %}
+    </div>
+  </figcaption>
+</figure>
