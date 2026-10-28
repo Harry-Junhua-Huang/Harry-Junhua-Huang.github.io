@@ -2,28 +2,36 @@
 layout: v2
 permalink: /
 title: "Junhua (Harry) Huang"
-doc_title: "Junhua (Harry) Huang · Robot learning & robotics systems"
-description: "Junhua (Harry) Huang: robot learning and robotics systems at UCLA VAIL. ChairNav wheelchair autonomy, quadruped mobile manipulation (CoRL 2026), Aria Gen 2 gaze interaction."
+doc_title: "Junhua (Harry) Huang · Robot learning on real hardware"
+description: "Junhua (Harry) Huang: M.S. ECE student at UCLA and student researcher at VAIL with Prof. Bolei Zhou, working on robot learning on real hardware: a power wheelchair, a quadruped carrying a robot arm, and Meta Aria glasses."
 body_class: home
 jsonld: true
-chair_sim: true
-preload_image: /assets/media/chairnav-nav-2x.webp
+preload_image: /assets/media/portrait-880.webp
+preload_srcset: "/assets/media/portrait-560.webp 560w, /assets/media/portrait-880.webp 880w"
+preload_sizes: "(max-width: 760px) 120px, 340px"
+og_image: /assets/media/og-home.jpg
+og_image_w: 1200
+og_image_h: 630
+og_image_alt: "Junhua (Harry) Huang"
 author_profile: false
 keywords: ["Junhua Huang", "Harry Huang", "robot learning", "robotics systems", "imitation learning", "preference learning", "reinforcement learning", "flow matching", "VLA", "VLM", "cross-embodiment transfer", "human-in-the-loop learning", "wheelchair navigation", "mobile manipulation", "system identification", "Isaac Sim", "UrbanSim", "ROS", "ROS 2", "CAN bus", "TensorRT", "SLAM", "RGB-LiDAR calibration", "3D reconstruction", "Permobil M3", "AgileX PiPER", "DEEP Robotics M20 Pro", "Booster T1", "Unitree Go2", "Meta Aria Gen 1", "Meta Aria Gen 2", "Jetson AGX Orin", "Jetson Xavier NX", "Python", "PyTorch", "UCLA", "VAIL"]
 ---
 {%- assign H = site.data.home -%}
 {%- assign L = H.links -%}
+{%- assign P = H.hero.portrait -%}
 
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero__grid">
+    <div class="hero__portrait">
+      <img src="{{ P.src | relative_url }}" srcset="{{ P.srcset }}" sizes="{{ P.sizes }}" width="880" height="1100" alt="{{ P.alt }}" fetchpriority="high" decoding="async">
+    </div>
     <div class="hero__text">
-      <div class="hero__id">
-        <img class="hero__avatar" src="{{ H.hero.avatar | relative_url }}" width="56" height="56" alt="Portrait of Junhua (Harry) Huang">
-        <p class="eyebrow">{{ H.hero.eyebrow }}</p>
-      </div>
       <h1 id="hero-title" class="hero__title">Junhua <em>(Harry)</em> Huang</h1>
-      <p class="hero__thesis">{{ H.hero.thesis }}</p>
-      <p class="hero__sub">{{ H.hero.sub }}</p>
+      <div class="hero__about">
+        {%- for p in H.hero.about %}
+        <p>{{ p }}</p>
+        {%- endfor %}
+      </div>
       <div class="btn-row hero__cta">
         <a class="btn btn--primary" href="{{ L.resume | relative_url }}">{% include v2/icon.html name="file" %}Résumé</a>
         <a class="btn" href="mailto:{{ L.email }}">{% include v2/icon.html name="mail" %}Email</a>
@@ -31,156 +39,81 @@ keywords: ["Junhua Huang", "Harry Huang", "robot learning", "robotics systems", 
         <a class="btn btn--icon-sm" href="{{ L.github }}" target="_blank" rel="noopener">{% include v2/icon.html name="github" %}<span class="btn__label">GitHub</span></a>
       </div>
     </div>
-    <div class="hero__media">
-      {% include v2/media.html id=H.hero.clip class="media--hero" %}
-    </div>
   </div>
+</section>
+
+<section class="section" id="work" aria-labelledby="work-title">
   <div class="wrap">
-    <ul class="stats" aria-label="Highlights">
-      {%- for s in H.stats %}
-      {%- capture num %}{{ s.num | replace: '→', '<span class="arr">→</span>' }}{% if s.unit %}<small class="stat__unit">{{ s.unit }}</small>{% endif %}{% endcapture %}
-      <li class="stat">
-        {%- if s.def %}
-        <button class="stat__btn" type="button" aria-expanded="false" aria-controls="stat-def-{{ forloop.index }}">
-          <span class="stat__num">{{ num }}</span>
-          <span class="stat__label">{{ s.label }}</span>
-          <span class="stat__i" aria-hidden="true">i</span>
-        </button>
-        <p class="stat__def" id="stat-def-{{ forloop.index }}">{{ s.def }}</p>
-        {%- else %}
-        <div class="stat__btn stat__btn--plain">
-          <span class="stat__num">{{ num }}</span>
-          <span class="stat__label">{{ s.label }}</span>
+    <header class="sec-head">
+      <h2 id="work-title" class="sec-title">Work</h2>
+    </header>
+    <ol class="work">
+      {%- for w in H.work %}
+      <li class="work__item">
+        <div class="work__media">
+          {%- if w.clip %}
+          {% include v2/media.html id=w.clip class="media--card" %}
+          {%- else %}
+          <div class="tile" style="--h: {{ w.hue | default: 40 }}" aria-hidden="true"><span class="tile__word">{{ w.tile }}</span></div>
+          <div class="tile__cap" aria-hidden="true"></div>
+          {%- endif %}
         </div>
+        <h3 class="work__title">{{ w.title }}</h3>
+        <p class="work__meta">{% for m in w.meta %}<span>{{ m }}</span>{% unless forloop.last %}{{ ' ' }}{% endunless %}{% endfor %}</p>
+        <p class="work__line">{{ w.line }}</p>
+        {%- if w.venue or w.links %}
+        <p class="work__foot">
+          {%- if w.venue %}<span class="work__venue">{{ w.venue }}</span>{% endif %}
+          {%- for l in w.links %}
+          {%- assign first = l.url | slice: 0 %}
+          {%- if first == "/" %}
+          <a class="work__link work__link--in" href="{{ l.url | relative_url }}">{{ l.label }}{% include v2/icon.html name="arrow" %}</a>
+          {%- else %}
+          <a class="work__link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% include v2/icon.html name="ext" %}</a>
+          {%- endif %}
+          {%- endfor %}
+        </p>
         {%- endif %}
       </li>
       {%- endfor %}
-    </ul>
-    <p class="pf-strip"><span class="pf-strip__k">Built on</span>{{ H.platforms }}</p>
-  </div>
-</section>
-
-<section class="band" id="demos" aria-labelledby="demos-title">
-  <div class="wrap">
-    <header class="sec-head">
-      <p class="eyebrow"><span class="idx">01</span>Demos</p>
-      <h2 id="demos-title" class="sec-title">Demo <em>reel</em></h2>
-    </header>
-    {% include v2/media.html id=H.reel.feature.clip class="media--wide" title=H.reel.feature.title note=H.reel.feature.note %}
-    <div class="reel">
-      {%- for t in H.reel.tiles %}
-      {% include v2/media.html id=t.clip class="media--tile" title=t.title %}
-      {%- endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section" id="systems" aria-labelledby="systems-title">
-  <div class="wrap">
-    <header class="sec-head">
-      <p class="eyebrow"><span class="idx">02</span>Systems</p>
-      <h2 id="systems-title" class="sec-title">Robot <em>systems</em></h2>
-    </header>
-    {%- for s in H.systems %}
-    <article class="sys sys--{{ s.id }}{% if s.widget or s.wide %} sys--wide{% endif %}" id="sys-{{ s.id }}">
-      <div class="sys__text">
-        <div class="sys__head">
-          <p class="sys__kicker">{{ s.kicker }}</p>
-          <h3 class="sys__title">{{ s.title }}</h3>
-        </div>
-        <div class="sys__body">
-          <p class="sys__line">{{ s.line }}</p>
-          {%- if s.figures %}
-          <dl class="figs">
-            {%- for f in s.figures %}
-            <div class="fig"><dt>{{ f.label }}</dt><dd>{{ f.num }}</dd></div>
-            {%- endfor %}
-          </dl>
-          {%- endif %}
-          {%- if s.caveat %}<p class="sys__caveat">{{ s.caveat }}</p>{% endif %}
-          {%- if s.links %}
-          <p class="links">{% for l in s.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% include v2/icon.html name="ext" %}</a>{% endfor %}</p>
-          {%- endif %}
-        </div>
-      </div>
-      <div class="sys__media">
-        {%- if s.widget %}
-        <p class="sys__try"><span class="live-dot" aria-hidden="true"></span>Drive the model</p>
-        {% include chair-sim.html %}
-        {%- else %}
-        {% include v2/media.html id=s.clip credit_only=true %}
-        {%- endif %}
-      </div>
-    </article>
-    {%- endfor %}
+    </ol>
   </div>
 </section>
 
 <section class="section" id="papers" aria-labelledby="papers-title">
   <div class="wrap">
     <header class="sec-head sec-head--split">
-      <div>
-        <p class="eyebrow"><span class="idx">03</span>Papers</p>
-        <h2 id="papers-title" class="sec-title">Selected <em>papers</em></h2>
-      </div>
+      <h2 id="papers-title" class="sec-title">Papers</h2>
       <a class="more" href="{{ '/publications/' | relative_url }}">All publications{% include v2/icon.html name="arrow" %}</a>
     </header>
-    <ol class="papers">
-      {%- for p in H.papers %}{% unless p.compact %}
-      <li class="paper">
-        <div class="paper__thumb">
-          {%- if p.thumb %}
-          {% include v2/media.html id=p.thumb class="media--thumb" still=true credit_only=true %}
-          {%- else %}
-          {% include v2/media.html id=p.clip class="media--thumb" credit_only=true %}
-          {%- endif %}
+    <ol class="pubs">
+      {%- for p in H.papers %}
+      <li class="pub">
+        <p class="pub__venue"><span class="badge badge--venue">{{ p.venue }}</span>{% if p.award %}<span class="badge badge--award">{{ p.award }}</span>{% endif %}</p>
+        <div class="pub__body">
+          <p class="pub__title">{{ p.title }}</p>
+          <p class="pub__authors">{{ p.authors }}</p>
         </div>
-        <p class="paper__venue"><span class="badge badge--venue">{{ p.venue }}</span>{% if p.award %}<span class="badge badge--award">{{ p.award }}</span>{% endif %}<span class="paper__role">{{ p.role }}</span></p>
-        <h3 class="paper__short">{{ p.short }}</h3>
-        <p class="paper__full">{{ p.title }}</p>
-        <p class="links paper__links">{% for l in p.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% include v2/icon.html name="ext" %}</a>{% endfor %}</p>
+        <p class="pub__links">{% for l in p.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% include v2/icon.html name="ext" %}</a>{% endfor %}</p>
       </li>
-      {%- endunless %}{% endfor %}
+      {%- endfor %}
     </ol>
-    <h3 class="sub-head">Also co-authored</h3>
-    <ul class="papers-mini">
-      {%- for p in H.papers %}{% if p.compact %}
-      <li>
-        <span class="badge badge--venue">{{ p.venue }}</span>{% if p.award %}<span class="badge badge--award">{{ p.award }}</span>{% endif %}
-        <span class="pm__text"><b class="pm__short">{{ p.short }}</b> <span class="pm__full">{{ p.title }}</span></span>
-        <a class="pm__link" href="{{ p.links[0].url }}" target="_blank" rel="noopener">{{ p.links[0].label }}{% include v2/icon.html name="ext" %}</a>
-      </li>
-      {%- endif %}{% endfor %}
-    </ul>
     <p class="fineprint">* Equal contribution.</p>
   </div>
 </section>
 
-<section class="section" id="experience" aria-labelledby="experience-title">
+<section class="section" id="education" aria-labelledby="education-title">
   <div class="wrap">
     <header class="sec-head sec-head--split">
-      <div>
-        <p class="eyebrow"><span class="idx">04</span>Experience</p>
-        <h2 id="experience-title" class="sec-title">Experience</h2>
-      </div>
+      <h2 id="education-title" class="sec-title">Education</h2>
       <a class="more" href="{{ '/cv/' | relative_url }}">Full CV{% include v2/icon.html name="arrow" %}</a>
     </header>
-    <ol class="timeline">
-      {%- for e in H.experience %}
-      <li class="tl">
-        <span class="tl__when">{{ e.when }}</span>
-        <span class="tl__org"><b>{{ e.org }}</b><span>{{ e.role }}</span></span>
-        <span class="tl__line">{{ e.line }}</span>
-      </li>
-      {%- endfor %}
-    </ol>
-    <h3 class="sub-head">Education</h3>
-    <ol class="timeline timeline--edu">
+    <ol class="edu">
       {%- for e in H.education %}
-      <li class="tl">
-        <span class="tl__when">{{ e.when }}</span>
-        <span class="tl__org"><b>{{ e.org }}</b></span>
-        <span class="tl__line">{{ e.role }}</span>
+      <li class="edu__row">
+        <span class="edu__school">{{ e.school }}</span>
+        <span class="edu__degree">{{ e.degree }}</span>
+        <span class="edu__when">{{ e.when }}</span>
       </li>
       {%- endfor %}
     </ol>

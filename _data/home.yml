@@ -1,6 +1,7 @@
 # Content for the v2 home page (_pages/home.html).
-# Numbers and wording follow EXPERIENCE_MASTER.md / EVIDENCE_AND_METRICS.md (kit 2026-10-26)
-# and, for Aria Gen 2, docs/gaze_to_goal_findings.md (2026-09-25). Keep each line short.
+# Facts follow EXPERIENCE_MASTER.md / EVIDENCE_AND_METRICS.md / the robotics résumé (kit 2026-10-26)
+# and, for Aria Gen 2, docs/gaze_to_goal_findings.md (2026-09-25). The home page carries no
+# metrics; numbers and details live on /cv/. Keep every line short and plain.
 
 links:
   resume: /files/Junhua_Huang_Robotics_Resume.pdf
@@ -14,126 +15,141 @@ visitor_map:
   enabled: false
   provider: "MapMyVisitors"
 
+# Hero: who he is, what he does, how he works. No numbers, no platform list, no video.
+# The portrait was built from images/profile2.png (passers-by removed, background blurred, 4:5 crop).
 hero:
-  eyebrow: "Robot learning · Robotics systems"
-  thesis: "I work where robot learning meets real hardware: cross-embodiment data, human-in-the-loop training, and on-robot deployment."
-  sub: "M.S. ECE @ UCLA · Student Researcher at VAIL with Prof. Bolei Zhou"
-  avatar: /assets/media/avatar.webp
-  clip: chairnav-nav-2x
+  about:
+    - 'I''m a master''s student in Electrical and Computer Engineering at UCLA and a student researcher at <a href="https://vail.cs.ucla.edu/" target="_blank" rel="noopener">VAIL</a>, working with <span class="nobr">Prof. <a href="https://boleizhou.github.io/" target="_blank" rel="noopener">Bolei Zhou</a>.</span>'
+    - "I work on robot learning on real hardware: a power wheelchair, a quadruped carrying a robot arm, and Meta Aria glasses."
+    - 'I like to prototype quickly, deploy on real robots, and keep improving them from <span class="nobr">real-world</span> use.'
+  portrait:
+    src: /assets/media/portrait-880.webp
+    srcset: "/assets/media/portrait-560.webp 560w, /assets/media/portrait-880.webp 880w"
+    sizes: "(max-width: 760px) 120px, 340px"
+    alt: "Portrait of Junhua (Harry) Huang"
 
-# num + optional unit (rendered smaller, in sans). def = the tap/hover definition (optional).
-stats:
-  - num: "84.9%"
-    label: "autonomous driving time · 7.8 km outdoor"
-    def: "ChairNav post-training policy: share of driving time across 4 outdoor drives (116.2 of 136.9 min). Not a task success rate."
-  - num: "0.6 → 20"
-    unit: "Hz"
-    label: "model inference on Jetson AGX Orin"
-    def: "ChairNav model, after quantization and TensorRT. Model inference rate, not the full control loop (the paper's deployment runs the model at 10 Hz)."
-  - num: "9"
-    unit: "platforms"
-    label: "5 robots · 2 Aria glasses · 2 Jetsons"
-
-# One line under the stats (replaces the old Platforms section).
-platforms: "Permobil M3 · AgileX PiPER · DEEP Robotics M20 Pro · Booster T1 · Unitree Go2 · Meta Aria Gen 1 & 2 · Jetson AGX Orin · Jetson Xavier NX"
-
-reel:
-  feature:
-    clip: chairnav-mid-vs-post
-    title: "Same gatepost, two policies"
-    note: "Matched by route position, not time. Mid-training, the rider has to correct; after human-in-the-loop post-training, the chair passes on its own."
-  tiles:
-    - clip: chairnav-hardware
-      title: "The ChairNav wheelchair"
-    - clip: cue-mobile-base-demo
-      title: "Cue-conditioned manipulation"
-    - clip: aria-wall-targets
-      title: "Gaze on targets 3–8 m away"
-
-systems:
-  - id: wheelchair
-    kicker: "ChairNav · VAIL, UCLA"
-    title: "Wheelchair autonomy stack"
-    line: "Reverse-engineered the R-net CAN interface, identified the chair's dynamics, and sped up ChairNav model inference on the Jetson from 0.6 to 20 Hz."
+# Work, reverse-chronological. Every card has the same shape:
+#   clip (key into _data/media.yml) or tile (a few words set in type on a soft tint of `hue`;
+#   no stock images, no people),
+#   title, meta (org · role · dates, one line), line (one sentence), venue (optional), links.
+# A link whose url starts with "/" is internal (arrow icon, same tab).
+work:
+  - title: "ChairNav"
+    meta: ["VAIL, UCLA", "First author", "Jan 2026 – Present"]
+    line: "A power wheelchair that learns to drive long outdoor routes from a delivery robot's driving data and its rider's corrections; I built the cross-embodiment data pipeline and worked on the chair's hardware and onboard software."
+    clip: chairnav-nav-2x
     links:
-      - { label: "Project page", url: "https://vail.cs.ucla.edu/ChairNav/" }
-      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
-    widget: true
-  - id: quadruped
-    kicker: "Cue the Flow · CoRL 2026"
-    title: "Quadruped mobile manipulation"
-    line: "A PiPER arm on a DEEP Robotics M20 Pro: I integrated the arm, power, comms and streaming, deployed a frozen π0.5 VLA through a Jetson bridge to remote inference, and built semi-automated demo collection."
-    links:
-      - { label: "Project page", url: "https://hatchetproject.github.io/delivery_steer/" }
-      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
-    clip: cue-outdoor-delivery-2
-  - id: gaze
-    kicker: "Meta Aria Gen 2 · VAIL, UCLA"
-    title: "Gaze → wheelchair goal"
-    line: "Can a glance at the floor give a wheelchair its goal? Aria Gen 2 eye gaze + VIO, checked against AprilTag ground truth."
-    figures:
-      - { num: "0.1–0.25 m", label: "floor-goal error at 1.5–4 m" }
-      - { num: "1.6–2.0°", label: "gaze error p50 (was 2.7–3.0°)" }
-      - { num: "1 / 5.4 min", label: "false confirms, natural use (naive pinch: ~100)" }
-    caveat: "5-pt calibration · 1 wearer, 1 day, chair parked · range = gaze ray ∩ floor (≤ 5 m), not the glasses' depth · analysed offline"
-    clip: aria-gaze-target
-    wide: true
-
-papers:
-  - short: "ChairNav"
-    title: "Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation"
-    venue: "Under submission · 2026"
-    role: "First author*"
-    thumb: chairnav-nav-2x
-    links:
-      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
       - { label: "Project", url: "https://vail.cs.ucla.edu/ChairNav/" }
-  - short: "Cue the Flow"
-    title: "Steering Flow-Matching Policies for Open-World Delivery Manipulation"
+      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
+      - { label: "Drive the model", url: "/play/wheelchair/" }
+
+  - title: "Cue the Flow"
+    meta: ["VAIL, UCLA", "Co-author", "2026"]
+    line: "Steering flow-matching policies for open-world delivery; I integrated the robot arm on a quadruped and deployed the models through a Jetson bridge to remote inference."
+    clip: cue-outdoor-delivery-2
     venue: "CoRL 2026"
-    role: "Co-author"
-    clip: cue-outdoor-delivery-1
     links:
-      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
       - { label: "Project", url: "https://hatchetproject.github.io/delivery_steer/" }
-  - short: "ToolSmith"
-    title: "An Automatic Tool-Generation Framework for Multimodal Search Agents"
+      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
+
+  - title: "Gaze → wheelchair goal"
+    meta: ["VAIL, UCLA", "Student Researcher", "2026"]
+    line: "Look at a spot on the floor, pinch to confirm: turning Meta Aria Gen 2 eye gaze and hand tracking into a goal for the wheelchair, so far tested offline with one wearer."
+    clip: aria-gaze-target
+
+  - title: "ToolSmith"
+    meta: ["UCLA NLP Group", "Prof. Kai-Wei Chang", "Dec 2025 – Mar 2026"]
+    line: "Co-developed a framework that writes and verifies reusable Python tools from failed runs of multimodal search agents."
+    tile: "Multimodal search agents"
+    hue: 215
     venue: "Findings of EMNLP 2026"
-    role: "Co-author"
-    compact: true
     links:
       - { label: "Project", url: "https://threesr.github.io/toolsmith/" }
-  - short: "S3"
-    title: "Seizure-Semiology-Suite: A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding"
-    venue: "ICML 2026"
-    award: "Spotlight"
-    role: "Co-author"
-    compact: true
+
+  - title: "Seizure-Semiology-Suite (S3)"
+    meta: ["Seizure Lab, ECE, UCLA", "Student Researcher", "Aug – Oct 2025"]
+    line: "Built a clinical seizure-semiology dataset and served three vision-language models with vLLM, contributing to the S3 benchmark."
+    tile: "Clinical multimodal data"
+    hue: 150
+    venue: "ICML 2026 Spotlight"
     links:
       - { label: "Paper", url: "https://arxiv.org/abs/2605.21852" }
 
-experience:
-  - when: "Jan 2026 – Present"
-    org: "VAIL, UCLA"
-    role: "Student Researcher · Prof. Bolei Zhou"
-    line: "ChairNav (first author), Cue the Flow, Aria Gen 1 & Gen 2"
-  - when: "Dec 2025 – Mar 2026"
-    org: "UCLA NLP Group"
-    role: "Student Researcher · Prof. Kai-Wei Chang"
-    line: "Co-developed ToolSmith: 264 verified tools; Qwen3-VL-8B MMSearch 51.46% → 55.56%"
-  - when: "Aug – Oct 2025"
-    org: "Seizure Lab, UCLA"
-    role: "Student Researcher"
-    line: "Clinical dataset for S3; vLLM serving 0.3 → 5 requests/s"
-  - when: "Jul – Sep 2024"
-    org: "Farsee2 Technology"
-    role: "Machine Learning Intern"
-    line: "City-scale Gaussian Splatting: ~40% fewer floating artifacts"
+  - title: "Acoustic highlighting & co-speech gestures"
+    meta: ["University of Rochester", "Prof. Chenliang Xu", "2024 – 2025"]
+    line: "First author of a paper on vision-language-guided acoustic highlighting; earlier, worked on co-speech gesture generation for GestureLSM."
+    tile: "Audio & gesture"
+    hue: 28
+    links:
+      - { label: "Acoustic highlighting", url: "https://arxiv.org/abs/2601.08871" }
+      - { label: "GestureLSM", url: "https://arxiv.org/abs/2501.18898" }
+
+  - title: "Image generation from skeletons"
+    meta: ["University of Rochester", "Prof. Jiebo Luo", "2024 – 2025"]
+    line: "Generated animal images from skeletons with Stable Diffusion and preference optimization; contributed to a Video-LMM survey."
+    tile: "Skeletons to images"
+    hue: 345
+    links:
+      - { label: "Video-LMM survey", url: "https://arxiv.org/abs/2510.05034" }
+
+  - title: "City-scale Gaussian Splatting"
+    meta: ["Farsee2 Technology", "ML Intern", "Jul – Sep 2024"]
+    line: "Reduced floating artifacts in city-scale reconstructions with incidence-angle weighting and depth/normal supervision, and spread preprocessing across machines."
+    tile: "3D reconstruction"
+    hue: 262
+
+# The seven papers on the résumé, in its order. venue = badge; award = second badge.
+papers:
+  - title: "ChairNav: Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation"
+    authors: "<b>J. Huang</b>*, Z. Liu*, H. He, X. Zhang, B. Zhou"
+    venue: "Under submission"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2610.24012" }
+      - { label: "Project", url: "https://vail.cs.ucla.edu/ChairNav/" }
+  - title: "Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation"
+    authors: "H. Wang, G. Galimi, <b>J. Huang</b>, S. Song, W. Wu, Y. Yan, B. Zhou"
+    venue: "CoRL 2026"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2609.38989" }
+      - { label: "Project", url: "https://hatchetproject.github.io/delivery_steer/" }
+  - title: "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents"
+    authors: "R. Sun, <b>J. Huang</b>, L. Zancato, M. M. Islam, K.-W. Chang"
+    venue: "Findings of EMNLP 2026"
+    links:
+      - { label: "Project", url: "https://threesr.github.io/toolsmith/" }
+  - title: "Seizure-Semiology-Suite (S3): A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding"
+    authors: "L. Zhang, T. Monsoor, …, <b>J. Huang</b>, …, R. Mazumder, V. Roychowdhury"
+    venue: "ICML 2026"
+    award: "Spotlight"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2605.21852" }
+  - title: "GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling"
+    authors: "P. Liu, L. Song, <b>J. Huang</b>, H. Liu, J. Zhu, C. Xu"
+    venue: "ICCV 2025"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2501.18898" }
+  - title: "Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models"
+    authors: "<b>J. Huang</b>, C. Huang, C. Xu"
+    venue: "arXiv 2026"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2601.08871" }
+  - title: "GestureFAR: Streaming Co-Speech Gesture Generation with Flow Autoregression"
+    authors: "P. Liu, H. Liu, J. Luo, <b>J. Huang</b>, C. Zou, L. Song"
+    venue: "arXiv 2026"
+    links:
+      - { label: "Paper", url: "https://arxiv.org/abs/2609.21576" }
 
 education:
-  - when: "Expected 2027"
-    org: "UCLA"
-    role: "M.S. Electrical and Computer Engineering"
-  - when: "May 2025"
-    org: "University of Rochester"
-    role: "B.S. Computer Science & B.S. Business · GPA 3.82"
+  - school: "University of California, Los Angeles"
+    degree: "M.S. Electrical and Computer Engineering"
+    when: "Expected 2027"
+  - school: "University of Rochester"
+    degree: 'B.S. Computer Science & B.S. Business · <span class="nobr">GPA 3.82</span>'
+    when: "May 2025"
+
+# The /play/wheelchair/ page (_pages/play-wheelchair.html).
+play:
+  lede: "A model of the ChairNav power wheelchair (a Permobil M3), identified from the chair's own calibration drives; drag the stick to drive it."
+  clip: chairnav-mid-vs-post
+  clip_title: "Same gatepost, two policies"
+  clip_note: "From the ChairNav drives, matched by route position, not time. Mid-training, the rider has to correct; after human-in-the-loop post-training, the chair passes on its own."

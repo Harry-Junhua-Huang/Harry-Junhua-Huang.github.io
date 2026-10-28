@@ -1,9 +1,8 @@
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Junhua Huang, home"><img class="brand__mark" src="{{ '/assets/media/avatar.webp' | relative_url }}" width="30" height="30" alt=""><span class="brand__name">Junhua Huang</span></a>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Junhua Huang, home">{% unless page.body_class == "home" %}<img class="brand__mark" src="{{ '/assets/media/portrait-64.webp' | relative_url }}" width="30" height="30" alt="">{% endunless %}<span class="brand__name">Junhua Huang</span></a>
     <nav class="site-nav" id="site-nav" aria-label="Main">
-      <a href="{{ '/#demos' | relative_url }}">Demos</a>
-      <a href="{{ '/#systems' | relative_url }}">Systems</a>
+      <a href="{{ '/#work' | relative_url }}">Work</a>
       <a href="{{ '/#papers' | relative_url }}">Papers</a>
       <a href="{{ '/cv/' | relative_url }}">CV</a>
     </nav>

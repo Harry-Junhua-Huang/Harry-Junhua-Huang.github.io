@@ -1,0 +1,24 @@
+---
+layout: v2
+permalink: /play/wheelchair/
+title: "Drive the wheelchair model"
+doc_title: "Drive the wheelchair model · Junhua (Harry) Huang"
+description: "Drive an interactive model of the ChairNav power wheelchair (Permobil M3), identified from the chair's calibration drives, and compare it with a recorded drive."
+body_class: is-play
+chair_sim: true
+credits: [chairnav-mid-vs-post]
+author_profile: false
+---
+{%- assign Q = site.data.home.play -%}
+<article class="play wrap" aria-labelledby="play-title">
+  <p class="play__back"><a href="{{ '/' | relative_url }}"><svg class="i i--back" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3.5M7.5 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Home</a></p>
+  <header class="play__head">
+    <h1 id="play-title" class="play__title">Drive the wheelchair model</h1>
+    <p class="play__lede">{{ Q.lede }}</p>
+  </header>
+  {% include chair-sim.html %}
+  <section class="play__clip" aria-label="{{ Q.clip_title }}">
+    {% include v2/media.html id=Q.clip class="media--wide" title=Q.clip_title note=Q.clip_note %}
+  </section>
+  <p class="play__more"><a class="more more--back" href="{{ '/' | relative_url }}"><svg class="i i--back" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3.5M7.5 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to home</a></p>
+</article>

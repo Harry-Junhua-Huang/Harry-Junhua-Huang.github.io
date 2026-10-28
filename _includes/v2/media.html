@@ -1,7 +1,7 @@
 {%- comment -%}
   Lazy, in-view looping clip from _data/media.yml.
   Usage: {% include v2/media.html id="chairnav-nav-2x" %}
-  Optional: class="media--x", title="...", note="...",
+  Optional: class="media--x" (media--card = fixed 16:9 frame), title="...", note="...",
             still=true (a lazy <img> of the poster instead of a video),
             credit_only=true (no mode/speed badges, e.g. when the card text already says it).
   No autoplay attribute and preload="none": assets/js/v2.js moves data-src to src only when the
@@ -15,7 +15,7 @@
 {%- assign eager = false -%}
 {%- if include.class contains 'media--hero' -%}{%- assign eager = true -%}{%- endif -%}
 <figure class="media{% if include.class %} {{ include.class }}{% endif %}{% if m.file_narrow and include.still == nil %} media--has-narrow{% endif %}">
-  <div class="media__frame" style="--ar: {{ m.w }} / {{ m.h }}">
+  <div class="media__frame" style="--ar: {{ m.w }} / {{ m.h }}{% if m.fit %}; --fit: {{ m.fit }}{% endif %}">
     {%- if include.still %}
     <img class="media__video" src="{{ m.poster | relative_url }}" width="{{ m.w }}" height="{{ m.h }}" loading="lazy" decoding="async" alt="{{ m.alt | escape }}"{% if m.pos %} style="object-position: {{ m.pos }}"{% endif %}>
     {%- else %}

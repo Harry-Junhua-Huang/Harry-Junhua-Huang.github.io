@@ -6,7 +6,8 @@ Junhua (Harry) Huang works where robot learning meets real hardware: cross-embod
 
 ## Links
 
-- [Homepage](https://harry-junhua-huang.github.io/): demos, robot systems, selected papers
+- [Homepage](https://harry-junhua-huang.github.io/): about, work, papers, education
+- [Drive the wheelchair model](https://harry-junhua-huang.github.io/play/wheelchair/): interactive model of the ChairNav power wheelchair, identified from its calibration drives
 - [CV](https://harry-junhua-huang.github.io/cv/): full text CV
 - [Résumé (PDF, 1 page)](https://harry-junhua-huang.github.io/files/Junhua_Huang_Robotics_Resume.pdf)
 - [Publications](https://harry-junhua-huang.github.io/publications/)
@@ -28,6 +29,9 @@ Junhua (Harry) Huang works where robot learning meets real hardware: cross-embod
   - Co-developed ToolSmith: 264 verified tools generated from a 9,174-query pool through tool synthesis and verification; Qwen3-VL-8B MMSearch accuracy 51.46% -> 55.56%.
 - **Student Researcher, Seizure Lab, ECE Department, UCLA** (Aug 2025 – Oct 2025)
   - Built a clinical seizure-semiology dataset (10,000 records, 8 features) contributing to S3; deployed 3 VLMs with vLLM asynchronous inference, 0.3 -> 5 requests/s (16.7x).
+- **Student Researcher / Research Assistant, University of Rochester**, Prof. Chenliang Xu's lab and Prof. Jiebo Luo's lab (2024 – 2025)
+  - Prof. Chenliang Xu's lab: first author of Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models (VLM-guided audio remixing; arXiv 2026); co-speech gesture generation, contributing to GestureLSM (ICCV 2025).
+  - Prof. Jiebo Luo's lab: diffusion-based image generation (Stable Diffusion image-to-image from skeletons; preference optimization with DPO and LoRA); contributed to the Video-LMM Post-Training survey.
 - **Machine Learning Intern, Farsee2 Technology** (Hybrid; Jul 2024 – Sep 2024)
   - About 40% fewer floating artifacts in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision; multi-machine preprocessing pipelines for reconstruction prototypes.
 

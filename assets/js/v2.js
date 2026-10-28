@@ -1,5 +1,5 @@
-/* v2.js: lazy in-view video loops, theme toggle, mobile nav and metric definitions
-   for the v2 layout. No dependencies; loaded with defer. */
+/* v2.js: lazy in-view video loops, theme toggle and mobile nav for the v2 layout.
+   No dependencies; loaded with defer. */
 (function () {
   'use strict';
 
@@ -52,34 +52,13 @@
     window.addEventListener('resize', function () { if (window.innerWidth > 640) setNav(false); });
   }
 
-  /* ---- metric chips: definition on hover (CSS) or tap/click (here) ---- */
-  function closeStats(except) {
-    each('.stat', function (s) {
-      if (s === except) return;
-      s.classList.remove('is-open');
-      var b = s.querySelector('button.stat__btn');
-      if (b) b.setAttribute('aria-expanded', 'false');
-    });
-  }
-  each('button.stat__btn', function (b) {
-    b.addEventListener('click', function () {
-      var stat = b.parentNode;
-      var open = !stat.classList.contains('is-open');
-      closeStats(stat);
-      stat.classList.toggle('is-open', open);
-      b.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-  document.addEventListener('click', function (e) {
-    if (!(e.target.closest && e.target.closest('.stat'))) closeStats(null);
-  });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { closeStats(null); setNav(false); }
+    if (e.key === 'Escape') setNav(false);
   });
 
   /* ---- lazy looping clips ----
      <video class="js-loop" preload="none" data-poster="..."><source data-src="..."></video>
-     Posters are set when a clip comes within ~800 px (the hero has a real poster attribute).
+     Posters are set when a clip comes within ~800 px (a clip with a real poster attribute keeps it).
      Video bytes are fetched only after the page has loaded and the clip is near the viewport;
      clips play while >= 25% visible and pause off-screen or in a hidden tab. With
      prefers-reduced-motion or Save-Data nothing autoplays and the Play button starts a clip.

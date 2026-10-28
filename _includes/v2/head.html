@@ -22,9 +22,9 @@
 <meta property="og:description" content="{{ desc | escape }}">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ og_image }}">
-<meta property="og:image:width" content="960">
-<meta property="og:image:height" content="540">
-<meta property="og:image:alt" content="The ChairNav wheelchair driving itself on a city sidewalk">
+<meta property="og:image:width" content="{{ page.og_image_w | default: 960 }}">
+<meta property="og:image:height" content="{{ page.og_image_h | default: 540 }}">
+<meta property="og:image:alt" content="{{ page.og_image_alt | default: 'The ChairNav wheelchair driving itself on a city sidewalk' | escape }}">
 <meta property="profile:first_name" content="Junhua">
 <meta property="profile:last_name" content="Huang">
 <meta name="twitter:card" content="summary_large_image">
@@ -39,7 +39,7 @@
 <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}document.documentElement.className+=' js';})();</script>
 <link rel="preload" href="{{ '/assets/fonts/geist-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 {%- if page.preload_image %}
-<link rel="preload" as="image" href="{{ page.preload_image | relative_url }}" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="{{ page.preload_image | relative_url }}"{% if page.preload_srcset %} imagesrcset="{{ page.preload_srcset }}" imagesizes="{{ page.preload_sizes }}"{% endif %} type="image/webp" fetchpriority="high">
 {%- endif %}
 <link rel="stylesheet" href="{{ '/assets/css/v2.css' | relative_url }}">
 {%- if page.chair_sim %}

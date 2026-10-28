@@ -1,22 +1,27 @@
-# Media used by the v2 home page (_pages/home.html via _includes/v2/media.html).
+# Media used by the v2 pages (_pages/home.html, _pages/play-wheelchair.html via _includes/v2/media.html).
 # Every clip is H.264, muted, faces blurred (deface), encoded 2026-10-27.
 # badges: execution-mode labels shown under the clip. speed: playback rate vs. real time
 # (left out when the source does not state it). credit: key into `credits` below.
 # burned: the clip already shows its labels in the frame, so they are not repeated under it
 #   ("mode" = mode labels are in the frame, speed is not; "all" = mode and speed both are).
 # file_narrow / poster_narrow: stacked cut served at <= 760 px wide (picked in assets/js/v2.js).
-# pos: object-position when a tile crops the clip to 16:9.
+# pos: object-position when a tile crops the clip to 16:9. fit: contain = letterbox instead of crop.
+# edits: what was done to the source clip; the footer credit line (credits.<key>.note with %EDITS%
+#   filled in) is printed only for the clips a page lists in its front matter `credits:`.
 
 credits:
   chairnav:
     label: "ChairNav"
     url: "https://vail.cs.ucla.edu/ChairNav/"
+    note: 'ChairNav clip via the <a href="https://vail.cs.ucla.edu/ChairNav/" target="_blank" rel="noopener">ChairNav project page</a> (Huang, Liu et al.): %EDITS%.'
   cue:
     label: "Cue the Flow"
     url: "https://hatchetproject.github.io/delivery_steer/"
+    note: 'Cue the Flow clip via the <a href="https://hatchetproject.github.io/delivery_steer/" target="_blank" rel="noopener">Cue the Flow project page</a> (Wang et al.): %EDITS%.'
   aria:
     label: "Own recording"
     url: ""
+    note: "Aria clip: my own recording."
 
 clips:
   chairnav-nav-2x:
@@ -29,6 +34,7 @@ clips:
     speed: "2×"
     burned: "all"
     credit: chairnav
+    edits: "trimmed, re-encoded, faces blurred"
 
   chairnav-hardware:
     file: /assets/media/chairnav-hardware.mp4
@@ -37,6 +43,7 @@ clips:
     h: 540
     alt: "Permobil M3 platform: Jetson AGX Orin, USB–CAN interface, ZED 2i camera"
     credit: chairnav
+    edits: "trimmed, re-encoded, faces blurred"
 
   chairnav-mid-vs-post:
     file: /assets/media/chairnav-mid-vs-post.mp4
@@ -50,6 +57,7 @@ clips:
     speed: "1×"
     burned: "mode"
     credit: chairnav
+    edits: "trimmed, re-encoded, faces and a house number blurred, MID/POST labels added"
 
   cue-mobile-base-demo:
     file: /assets/media/cue-mobile-base-demo.mp4
@@ -58,6 +66,7 @@ clips:
     h: 540
     alt: "Cue the Flow: cue-conditioned manipulation on the mobile base"
     credit: cue
+    edits: "trimmed, re-encoded, faces blurred, padded with a blurred background"
 
   cue-outdoor-delivery-2:
     file: /assets/media/cue-outdoor-delivery-2.mp4
@@ -68,6 +77,7 @@ clips:
     badges: ["Auto grasp · 1×", "Manual nav · 2×"]
     burned: "all"
     credit: cue
+    edits: "trimmed, re-encoded, faces blurred"
 
   cue-outdoor-delivery-1:
     file: /assets/media/cue-outdoor-delivery-1.mp4
@@ -78,6 +88,7 @@ clips:
     badges: ["Auto grasp · 1×", "Manual nav · 2×"]
     burned: "all"
     credit: cue
+    edits: "trimmed, re-encoded, faces blurred"
 
   aria-gaze-target:
     file: /assets/media/aria-gaze-target.mp4
@@ -85,8 +96,8 @@ clips:
     w: 960
     h: 412
     alt: "Aria Gen 2: gaze dwell selects a floor AprilTag from the wheelchair; left the glasses' view, right a top-down map"
+    fit: contain
     badges: ["Offline analysis"]
-    speed: "1×"
     credit: aria
 
   aria-wall-targets:
