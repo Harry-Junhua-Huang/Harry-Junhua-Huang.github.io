@@ -23,7 +23,7 @@ hero:
     - 'I''m a master''s student in Electrical and Computer Engineering at UCLA and a student researcher at <a href="https://vail.cs.ucla.edu/" target="_blank" rel="noopener">VAIL</a>, working with <span class="nobr">Prof. <a href="https://boleizhou.github.io/" target="_blank" rel="noopener">Bolei Zhou</a>.</span>'
     - "I work on robot learning on real hardware: a power wheelchair, a quadruped carrying a robot arm, and Meta Aria glasses."
     - 'I like to prototype quickly, deploy on real robots, and keep improving them from <span class="nobr">real-world</span> use.'
-  open_to: "Open to full-time roles in robot learning and robotics engineering, starting 2027."
+  open_to: "Open to full-time roles and PhD positions in robot learning and robotics, starting 2027."
   portrait:
     src: /assets/media/portrait-880.webp
     srcset: "/assets/media/portrait-560.webp 560w, /assets/media/portrait-880.webp 880w"

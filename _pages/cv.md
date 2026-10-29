@@ -56,7 +56,7 @@ RESEARCH & ENGINEERING EXPERIENCE
     *   Reconstructed animal images from skeletons using Stable Diffusion (image-to-image); applied partial diffusion to retain segmentation and sparse-cloud encoders to inject spatial cues across large domain gaps.
     *   Improved facial realism with preference optimization (DPO with LoRA fine-tuning); built preference pairs and tuned prompts and schedules on UR Linux clusters. Contributed to the [Video-LMM Post-Training](https://arxiv.org/abs/2510.05034) survey.
 
-*   **Machine Learning Intern**, Farsee2 Technology (Hybrid / Wuhan, China), mentored by Dr. Hailong Pan
+*   **Machine Learning Intern**, Farsee2 Technology (Hybrid), mentored by Dr. Hailong Pan
     *   *Jul 2024 – Sep 2024*
     *   Reduced floating artifacts by approximately 40% in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision.
     *   Built configurable multi-machine scripts that parallelized depth generation and preprocessing, integrated into the product pipeline.

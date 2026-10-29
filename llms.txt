@@ -2,7 +2,7 @@
 
 > Robot learning and robotics systems. M.S. in Electrical and Computer Engineering at UCLA (expected 2027); Student Researcher at the Vision and Autonomy Intelligence Lab (VAIL), UCLA, with Prof. Bolei Zhou. Los Angeles, CA.
 
-Open to full-time roles in robot learning and robotics engineering, starting 2027.
+Open to full-time roles and PhD positions in robot learning and robotics, starting 2027.
 
 Junhua (Harry) Huang works where robot learning meets real hardware: cross-embodiment data, human-in-the-loop training, and on-robot deployment. He is first author of ChairNav, a data-efficient cross-embodiment pipeline for outdoor, map-free wheelchair navigation on a Permobil M3, and co-author of Cue the Flow (CoRL 2026), ToolSmith (Findings of EMNLP 2026) and S3 (ICML 2026 Spotlight). His experience covers the whole robot stack, from reverse-engineering a wheelchair's R-net CAN interface, nonlinear system identification, 3D-printed prototypes and sensor mounts, and semi-automated RGB-LiDAR calibration, to quantized TensorRT model inference on a Jetson AGX Orin, edge-host VLA deployment on a quadruped mobile manipulator, eye-gaze interaction with Meta Aria glasses, vLLM model serving and city-scale Gaussian Splatting. He prototypes quickly, deploys on real robots, and improves systems from real-world use, for example human-in-the-loop post-training from rider takeovers.
 
