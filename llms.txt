@@ -35,7 +35,7 @@ Junhua (Harry) Huang works where robot learning meets real hardware: cross-embod
   - Prof. Chenliang Xu's lab: first author of Semantic Visually-Guided Acoustic Highlighting with Large Vision-Language Models (VLM-guided audio remixing; arXiv 2026); co-speech gesture generation, contributing to GestureLSM (ICCV 2025).
   - Prof. Jiebo Luo's lab: diffusion-based image generation (Stable Diffusion image-to-image from skeletons; preference optimization with DPO and LoRA); contributed to the Video-LMM Post-Training survey.
 - **Machine Learning Intern, Farsee2 Technology** (Hybrid; Jul 2024 – Sep 2024)
-  - About 40% fewer floating artifacts in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision; multi-machine preprocessing pipelines for reconstruction prototypes.
+  - About 40% fewer floating artifacts in city-scale Gaussian Splatting with incidence-angle weighting and depth/normal supervision; multi-machine depth-generation and preprocessing scripts, integrated into the product pipeline.
 
 ## Education
 

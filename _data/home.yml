@@ -9,11 +9,11 @@ links:
   linkedin: https://www.linkedin.com/in/junuha-huang/
   github: https://github.com/Harry-Junhua-Huang
 
-# Visitor map in the home footer (MapMyVisitors flat map, dots only, not clickable). It appears once
-# `hash` is set to the d=... value from the MapMyVisitors embed code; the snippet itself is built in
-# _includes/v2/visitor-map-snippet.html.
+# Visitor map in the home footer (MapMyVisitors flat map, dots only, not clickable). `hash` is the
+# d=... value from the MapMyVisitors embed code (empty = no map); the script URL is built in
+# _includes/v2/visitor-map-src.html and loaded by assets/js/v2.js.
 visitor_map:
-  hash: ""
+  hash: "_5Q8Bz9xCmvp5v-4VXgzKgDnoCbIB2i1FWKlLfJm840"
   provider: "MapMyVisitors"
 
 # Hero: who he is, what he does, how he works. No numbers, no platform list, no video.
@@ -32,8 +32,9 @@ hero:
 
 # Work, reverse-chronological. Every card has the same shape:
 #   clip (key into _data/media.yml) or figure (the paper's main figure, or a detail of it, on a
-#   white plate: files /assets/media/fig-<key>-{560,1120}.webp, linking to fig-<key>-full.webp;
-#   label = left caption, from + url = right caption; faces in figures are blurred),
+#   white plate, or a 16:9 photo: files /assets/media/fig-<key>-{560,1120}.webp, linking to
+#   fig-<key>-full.webp; label = left caption, from + url = optional right caption; faces in paper
+#   figures are blurred),
 #   title, meta (org · role · dates, one line), line (one sentence), venue (optional), links.
 # A link whose url starts with "/" is internal (arrow icon, same tab).
 work:
@@ -115,10 +116,9 @@ work:
     meta: ["Farsee2 Technology", "ML Intern", "Jul – Sep 2024"]
     line: "Reduced floating artifacts in city-scale reconstructions with incidence-angle weighting and depth/normal supervision, and spread preprocessing across machines."
     figure:
-      key: farsee
-      label: "Schematic"
-      from: "My drawing"
-      alt: "Line drawing of city blocks with an aerial camera path: one camera's ray hits a tower facade at an angle theta, a faint grazing ray from an overhead camera passes the facade, and a floating blob on that ray is crossed out."
+      key: farsee-team
+      label: "With the team, summer 2024"
+      alt: "Selfie of Junhua in the Farsee2 office, smiling in the foreground, with colleagues at their desks and monitors behind him."
 
 # The seven papers on the résumé, in its order. venue = badge; award = second badge.
 papers:

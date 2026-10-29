@@ -45,11 +45,9 @@ keywords: ["Junhua Huang", "Harry Huang", "robot learning", "robotics systems", 
   </div>
 </section>
 
-<section class="section" id="work" aria-labelledby="work-title">
+<section class="section section--work" id="work" aria-labelledby="work-title">
   <div class="wrap">
-    <header class="sec-head">
-      <h2 id="work-title" class="sec-title">Work</h2>
-    </header>
+    <h2 id="work-title" class="visually-hidden">Work</h2>
     <ol class="work">
       {%- for w in H.work %}
       <li class="work__item">
@@ -68,7 +66,7 @@ keywords: ["Junhua Huang", "Harry Huang", "robot learning", "robotics systems", 
                 <span class="fig__label">{{ F.label }}</span>
                 {%- if F.url %}
                 <a class="credit" href="{{ F.url }}" target="_blank" rel="noopener">from {{ F.from }}&nbsp;<span aria-hidden="true">↗</span></a>
-                {%- else %}
+                {%- elsif F.from %}
                 <span class="credit credit--own">{{ F.from }}</span>
                 {%- endif %}
               </div>

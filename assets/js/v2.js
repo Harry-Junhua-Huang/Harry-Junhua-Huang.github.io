@@ -1,4 +1,4 @@
-/* v2.js: lazy in-view video loops, theme toggle and mobile nav for the v2 layout.
+/* v2.js: lazy in-view video loops, theme toggle, mobile nav and the deferred visitor map for the v2 layout.
    No dependencies; loaded with defer. */
 (function () {
   'use strict';
@@ -56,11 +56,40 @@
     if (e.key === 'Escape') setNav(false);
   });
 
+  /* ---- visitor map ----
+     <div class="footer__visitors" data-map-src="..."> gets the MapMyVisitors script only after the
+     load event, so the widget (it pulls in jQuery and a JSONP call) never delays the page or the
+     clips. The block stays collapsed until the widget has inserted itself, so a blocked or failed
+     widget leaves no empty box. */
+  var vm = document.querySelector('.footer__visitors[data-map-src]');
+  function startMap() {
+    var box = vm.querySelector('.footer__visitors-map');
+    if (!box) return;
+    if (window.MutationObserver) {
+      var mo = new MutationObserver(function () {
+        if (box.querySelector('#mapmyvisitors-widget')) { vm.classList.add('is-ready'); mo.disconnect(); }
+      });
+      mo.observe(box, { childList: true, subtree: true });
+    } else {
+      vm.classList.add('is-ready');
+    }
+    var s = document.createElement('script');
+    s.id = 'mapmyvisitors';
+    s.async = true;
+    s.src = vm.getAttribute('data-map-src');
+    box.appendChild(s);
+  }
+  if (vm) {
+    if (document.readyState === 'complete') startMap();
+    else window.addEventListener('load', startMap);
+  }
+
   /* ---- lazy looping clips ----
      <video class="js-loop" preload="none" data-poster="..."><source data-src="..."></video>
      Posters are set when a clip comes within ~800 px (a clip with a real poster attribute keeps it).
      Video bytes are fetched only after the page has loaded and the clip is near the viewport;
-     clips play while >= 25% visible and pause off-screen or in a hidden tab. With
+     clips play while >= 10% visible (so a strip of the first row under the hero already plays)
+     and pause off-screen or in a hidden tab. With
      prefers-reduced-motion or Save-Data nothing autoplays and the Play button starts a clip.
      A <source data-media="(max-width: 760px)"> is used only when its query matches, so the
      stacked cut is served on phones and the wide one elsewhere. */
@@ -148,7 +177,7 @@
         if (!v.paused) v.pause();
       }
     });
-  }, { threshold: 0.25 });
+  }, { threshold: 0.1 });
 
   /* start after the load event so video bytes do not compete with fonts, CSS and posters */
   function go() { vids.forEach(function (v) { near.observe(v); seen.observe(v); }); }

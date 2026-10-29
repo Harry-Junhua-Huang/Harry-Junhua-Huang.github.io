@@ -210,7 +210,7 @@ exclude:
   - _pages/sitemap.md
   - files/paper*.pdf
   - files/slides*.pdf
-  # group photo with identifiable colleagues (no longer used on /about/)
+  # 4032px original of the Farsee team photo (7.4 MB); the home card uses assets/media/fig-farsee-team-*.webp
   - images/farsee_internship.jpg
 keep_files:
   - .git
