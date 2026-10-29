@@ -9,10 +9,11 @@ links:
   linkedin: https://www.linkedin.com/in/junuha-huang/
   github: https://github.com/Harry-Junhua-Huang
 
-# Visitor map in the home footer. To turn it on: paste the provider's <script> snippet into
-# _includes/v2/visitor-map-snippet.html and set enabled: true.
+# Visitor map in the home footer (MapMyVisitors flat map, dots only, not clickable). It appears once
+# `hash` is set to the d=... value from the MapMyVisitors embed code; the snippet itself is built in
+# _includes/v2/visitor-map-snippet.html.
 visitor_map:
-  enabled: false
+  hash: ""
   provider: "MapMyVisitors"
 
 # Hero: who he is, what he does, how he works. No numbers, no platform list, no video.
@@ -22,6 +23,7 @@ hero:
     - 'I''m a master''s student in Electrical and Computer Engineering at UCLA and a student researcher at <a href="https://vail.cs.ucla.edu/" target="_blank" rel="noopener">VAIL</a>, working with <span class="nobr">Prof. <a href="https://boleizhou.github.io/" target="_blank" rel="noopener">Bolei Zhou</a>.</span>'
     - "I work on robot learning on real hardware: a power wheelchair, a quadruped carrying a robot arm, and Meta Aria glasses."
     - 'I like to prototype quickly, deploy on real robots, and keep improving them from <span class="nobr">real-world</span> use.'
+  open_to: "Open to full-time roles in robot learning and robotics engineering, starting 2027."
   portrait:
     src: /assets/media/portrait-880.webp
     srcset: "/assets/media/portrait-560.webp 560w, /assets/media/portrait-880.webp 880w"
@@ -29,8 +31,9 @@ hero:
     alt: "Portrait of Junhua (Harry) Huang"
 
 # Work, reverse-chronological. Every card has the same shape:
-#   clip (key into _data/media.yml) or tile (a few words set in type on a soft tint of `hue`;
-#   no stock images, no people),
+#   clip (key into _data/media.yml) or figure (the paper's main figure, or a detail of it, on a
+#   white plate: files /assets/media/fig-<key>-{560,1120}.webp, linking to fig-<key>-full.webp;
+#   label = left caption, from + url = right caption; faces in figures are blurred),
 #   title, meta (org · role · dates, one line), line (one sentence), venue (optional), links.
 # A link whose url starts with "/" is internal (arrow icon, same tab).
 work:
@@ -60,8 +63,12 @@ work:
   - title: "ToolSmith"
     meta: ["UCLA NLP Group", "Prof. Kai-Wei Chang", "Dec 2025 – Mar 2026"]
     line: "Co-developed a framework that writes and verifies reusable Python tools from failed runs of multimodal search agents."
-    tile: "Multimodal search agents"
-    hue: 215
+    figure:
+      key: toolsmith
+      label: "Figure 1"
+      from: "ToolSmith"
+      url: "https://threesr.github.io/toolsmith/"
+      alt: "Part of Figure 1 of the ToolSmith paper: an agent's expanded tool library, including an auto-generated \"Event In Image\" tool, whose trajectory identifies a tour bus as linked to the 2010 Manila hostage crisis."
     venue: "Findings of EMNLP 2026"
     links:
       - { label: "Project", url: "https://threesr.github.io/toolsmith/" }
@@ -69,8 +76,12 @@ work:
   - title: "Seizure-Semiology-Suite (S3)"
     meta: ["Seizure Lab, ECE, UCLA", "Student Researcher", "Aug – Oct 2025"]
     line: "Built a clinical seizure-semiology dataset and served three vision-language models with vLLM, contributing to the S3 benchmark."
-    tile: "Clinical multimodal data"
-    hue: 150
+    figure:
+      key: s3
+      label: "Figure 1"
+      from: "the S3 paper"
+      url: "https://arxiv.org/abs/2605.21852"
+      alt: "Part of Figure 1 of the S3 paper: five seizure video frames of an AI-generated patient, faces blurred, labelled blank stare, head turning, vocalization, tonic and clonic, above a colour-coded timeline and a short semiology report."
     venue: "ICML 2026 Spotlight"
     links:
       - { label: "Paper", url: "https://arxiv.org/abs/2605.21852" }
@@ -78,25 +89,36 @@ work:
   - title: "Acoustic highlighting & co-speech gestures"
     meta: ["University of Rochester", "Prof. Chenliang Xu", "2024 – 2025"]
     line: "First author of a paper on vision-language-guided acoustic highlighting; earlier, worked on co-speech gesture generation for GestureLSM."
-    tile: "Audio & gesture"
-    hue: 28
+    figure:
+      key: acoustic
+      label: "Figure 1"
+      from: "the paper"
+      url: "https://arxiv.org/abs/2601.08871"
+      alt: "Part of Figure 1 of the acoustic-highlighting paper: input audio passes through magnitude and waveform encoders, a latent highlighting transformer and decoders, conditioned on a video frame through CLIP and on a text feature module."
     links:
       - { label: "Acoustic highlighting", url: "https://arxiv.org/abs/2601.08871" }
       - { label: "GestureLSM", url: "https://arxiv.org/abs/2501.18898" }
 
-  - title: "Image generation from skeletons"
+  - title: "Skeleton-to-image & Video-LMM survey"
     meta: ["University of Rochester", "Prof. Jiebo Luo", "2024 – 2025"]
-    line: "Generated animal images from skeletons with Stable Diffusion and preference optimization; contributed to a Video-LMM survey."
-    tile: "Skeletons to images"
-    hue: 345
+    line: "Generated animal images from skeletons with Stable Diffusion and preference optimization, and contributed to a survey of Video-LMM post-training."
+    figure:
+      key: videolmm
+      label: "Figure 1"
+      from: "the Video-LMM survey"
+      url: "https://arxiv.org/abs/2510.05034"
+      alt: "Figure 1 of the Video-LMM post-training survey: a flow from a pretrained LLM and encoders through supervised fine-tuning, reinforcement learning and test-time scaling, with small thumbnails of related datasets and methods."
     links:
       - { label: "Video-LMM survey", url: "https://arxiv.org/abs/2510.05034" }
 
   - title: "City-scale Gaussian Splatting"
     meta: ["Farsee2 Technology", "ML Intern", "Jul – Sep 2024"]
     line: "Reduced floating artifacts in city-scale reconstructions with incidence-angle weighting and depth/normal supervision, and spread preprocessing across machines."
-    tile: "3D reconstruction"
-    hue: 262
+    figure:
+      key: farsee
+      label: "Schematic"
+      from: "My drawing"
+      alt: "Line drawing of city blocks with an aerial camera path: one camera's ray hits a tower facade at an angle theta, a faint grazing ray from an overhead camera passes the facade, and a floating blob on that ray is crossed out."
 
 # The seven papers on the résumé, in its order. venue = badge; award = second badge.
 papers:

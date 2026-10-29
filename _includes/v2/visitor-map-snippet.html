@@ -1,1 +1,5 @@
-{%- comment -%} Paste the visitor-map <script> from MapMyVisitors (or ClustrMaps) below, then set visitor_map.enabled: true in _data/home.yml {%- endcomment -%}
+{%- comment -%} MapMyVisitors flat map, dots only (t=n), colours from the light tokens in v2.css
+  (co = --surface-2, cl = --line-strong, dots = --accent, ct = --muted); v2.css inverts it in dark mode.
+  Only the site hash (d=...) comes from the account: set visitor_map.hash in _data/home.yml. {%- endcomment -%}
+{%- assign VM = site.data.home.visitor_map -%}
+<script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ VM.hash }}&amp;w=a&amp;t=n&amp;co=efeee8&amp;cl=cfccc2&amp;cmo=c2410c&amp;cmn=c2410c&amp;ct=5d6069"></script>
